@@ -9,7 +9,13 @@ import { NavbarComponent } from './components/common/navbar/navbar.component';
 import { FooterComponent } from './components/common/footer/footer.component';
 
 @NgModule({
-  declarations: [AppComponent, AboutUsComponent, HomeComponent, NavbarComponent, FooterComponent],
+  declarations: [
+    AppComponent,
+    AboutUsComponent,
+    HomeComponent,
+    NavbarComponent,
+    FooterComponent,
+  ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
