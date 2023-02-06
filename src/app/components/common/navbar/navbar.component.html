@@ -1,1 +1,44 @@
-<p>navbar works!</p>
+<header>
+  <a class="logo">Autoškola "A&S"</a>
+
+  <ul class="navbar" [ngClass]="{ open: sideMenuOpened }">
+    <li><a href="#" class="active">O nama</a></li>
+    <li><a href="#">Novosti</a></li>
+    <li><a href="#">Tutorijali</a></li>
+    <li><a href="#">Pitanja</a></li>
+    <li><a href="#">Galerija</a></li>
+    <li><a href="#">Kontakt</a></li>
+  </ul>
+  <div class="main">
+    <a href="#" class="user">Prijavi se</a>
+    <a href="#">Registruj se</a>
+    <svg
+      id="burger-menu"
+      (click)="toggleSideMenu()"
+      width="35"
+      height="35"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M5 7H19"
+        stroke="#F6F6F6"
+        stroke-width="2"
+        stroke-linecap="round"
+      />
+      <path
+        d="M5 12H19"
+        stroke="#F6F6F6"
+        stroke-width="2"
+        stroke-linecap="round"
+      />
+      <path
+        d="M5 17H19"
+        stroke="#F6F6F6"
+        stroke-width="2"
+        stroke-linecap="round"
+      />
+    </svg>
+  </div>
+</header>

@@ -3,4 +3,14 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --main-color: #FF7A00;
+    --secondary-color: #FFE600;
+    --text-dark: #1D1D1D;
+    --text-white: #F6F6F6;
+    --gray: #E1E1E1;
 }
