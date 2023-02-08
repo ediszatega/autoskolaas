@@ -9,6 +9,7 @@ import { NavbarComponent } from './components/common/navbar/navbar.component';
 import { FooterComponent } from './components/common/footer/footer.component';
 import { PhasesSectionComponent } from './components/home/sections/phases-section/phases-section.component';
 import { TestModuleComponent } from './components/test-module/test-module.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { TestModuleComponent } from './components/test-module/test-module.compon
     PhasesSectionComponent,
     TestModuleComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],
   bootstrap: [AppComponent],
 })

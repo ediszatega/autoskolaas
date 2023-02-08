@@ -136,6 +136,7 @@ h6 {
 .section-title {
   font-size: 2rem;
   font-weight: 600;
+  text-align: center;
 }
 
 .phases {
@@ -176,6 +177,125 @@ h6 {
   font-weight: 600;
 }
 
+.faq-section {
+  background-color: var(--main-color);
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0 50px 0;
+  padding: 15px 0;
+  border-radius: 10px;
+  filter: drop-shadow(0px 3px 5px #343434);
+}
+
+.faq-content {
+  width: 100%;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.faq-image,
+.faq-questions {
+  display: flex;
+  align-items: center;
+}
+
+.faq-image {
+  justify-content: center;
+  width: 50%;
+}
+
+.faq-questions {
+  width: 50%;
+  justify-content: flex-start;
+}
+
+.faq-img {
+  width: 450px;
+  aspect-ratio: 1/1;
+}
+
+.questions-answers {
+  width: 90%;
+}
+
+.card {
+  margin: 7px 0;
+}
+
+.card-header {
+  background-color: var(--text-white);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.card-header h6 {
+  color: var(--text-dark);
+}
+
+.card-body {
+  width: 90%;
+}
+
+/* .questions-answers {
+  padding: 0 20px;
+}
+
+.question-answer {
+  margin: 15px 0;
+}
+
+.question,
+.btn-arrows {
+  display: flex;
+  align-items: center;
+  color: var(--text-dark);
+}
+
+p.question-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  max-width: 85%;
+}
+
+.btn-arrows {
+  margin-left: 10px;
+}
+
+.arrow-up {
+  display: none;
+}
+
+.answer {
+  width: 95%;
+  margin-left: 10px;
+  display: none;
+}
+
+.answer p {
+  line-height: 130%;
+} */
+
+/* SECONDARY CLASSES */
+.inverted {
+  color: var(--text-white);
+}
+
+@media (max-width: 1300px) {
+  .faq-img {
+    width: 350px;
+  }
+
+  p.question-title {
+    font-size: 1.1rem;
+  }
+
+  .answer p {
+    font-size: 0.95rem;
+  }
+}
+
 @media (max-width: 1000px) {
   .hero-section {
     background-position: 15% center;
@@ -183,6 +303,36 @@ h6 {
 
   .phases-section {
     width: 90%;
+  }
+
+  .faq-section {
+    width: 90%;
+  }
+
+  .faq-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .faq-questions {
+    width: 80%;
+    justify-content: center;
+  }
+
+  .question {
+    justify-content: center;
+  }
+
+  p.question-title {
+    font-size: 1.3rem;
+    text-align: center;
+    margin-left: 50px;
+  }
+
+  .answer p {
+    font-size: 1rem;
+    text-align: center;
   }
 }
 
@@ -219,5 +369,13 @@ h6 {
     height: 3px;
     border-radius: 5px;
     margin: 1rem 0;
+  }
+
+  .faq-img {
+    width: 250px;
+  }
+
+  p.question-title {
+    margin-left: 25px;
   }
 }

@@ -1,6 +1,8 @@
 :host {
   display: block;
   height: 85px;
+  list-style: none;
+  text-decoration: none;
 }
 
 header {
@@ -17,6 +19,7 @@ header {
   background-color: var(--main-color);
   padding: 28px 12%;
   transition: all 0.05s ease;
+  filter: drop-shadow(0px 3px 5px #343434);
 }
 
 .logo {
@@ -27,6 +30,7 @@ header {
 
 .navbar {
   display: flex;
+  margin-bottom: 0 !important;
 }
 
 .navbar a {
@@ -97,7 +101,7 @@ header {
     top: 100%;
     right: -100%;
     width: 270px;
-    height: 39vh;
+    height: 42vh;
     background-color: var(--gray);
     display: flex;
     flex-direction: column;
