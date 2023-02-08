@@ -1,1 +1,35 @@
-<p>test-module works!</p>
+<div class="wrapper">
+  <div id="game" class="justify-center flex-column">
+    <h4 id="current-question">
+      {{ current_question_number_text }}/{{ number_of_questions_text }}
+    </h4>
+    <h2 id="question">{{ current_question.question }}</h2>
+    <img
+      class="question-img"
+      *ngIf="current_question.image"
+      src="{{ current_question.image }}"
+      alt=""
+    />
+    <div
+      *ngFor="let answer of this.answers"
+      class="answers justify-center flex-column"
+    >
+      <div
+        (click)="selectAnswer(answer)"
+        class="choice-container"
+        class="{{ answer.class }}"
+      >
+        <input type="checkbox" class="checkbox" [(checked)]="answer.checked" />
+        <p class="choice-text">{{ answer.text }}</p>
+      </div>
+    </div>
+    <div class="question-nav-buttons-container">
+      <!-- <button class="question-nav-button btn">&#60;&#60;</button>
+      <button class="question-nav-button btn">&#60;</button> -->
+      <button (click)="nextQuestion()" class="question-nav-button btn">
+        &#62;
+      </button>
+      <!-- <button class="question-nav-button btn">&#62;&#62;</button> -->
+    </div>
+  </div>
+</div>
