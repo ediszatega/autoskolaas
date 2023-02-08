@@ -7,6 +7,7 @@ import { AboutUsComponent } from './components/about-us/about-us.component';
 import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/common/navbar/navbar.component';
 import { FooterComponent } from './components/common/footer/footer.component';
+import { PhasesSectionComponent } from './components/home/sections/phases-section/phases-section.component';
 import { TestModuleComponent } from './components/test-module/test-module.component';
 
 @NgModule({
@@ -16,6 +17,7 @@ import { TestModuleComponent } from './components/test-module/test-module.compon
     HomeComponent,
     NavbarComponent,
     FooterComponent,
+    PhasesSectionComponent,
     TestModuleComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
