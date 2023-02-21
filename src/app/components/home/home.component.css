@@ -41,6 +41,7 @@
   color: var(--text-white);
   font-size: 3.4rem;
   font-weight: 600;
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -54,10 +55,11 @@
   color: var(--main-color);
 }
 
-h6 {
+.hero-image h6 {
   color: var(--text-white);
   margin-bottom: 30px;
   font-size: 1rem;
+  text-align: center;
 }
 
 .about-us-section {
@@ -70,7 +72,6 @@ h6 {
 
 .about-us-wrapper {
   width: 75%;
-  min-height: 6rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -90,6 +91,7 @@ h6 {
   font-size: 1.3rem;
   font-weight: 500;
   color: var(--text-white);
+  text-align: center;
 }
 
 .btn-o-nama {
@@ -238,44 +240,60 @@ h6 {
   width: 90%;
 }
 
-/* .questions-answers {
-  padding: 0 20px;
-}
-
-.question-answer {
-  margin: 15px 0;
-}
-
-.question,
-.btn-arrows {
+.reviews-section {
+  width: 100%;
+  background-color: var(--gray);
+  padding: 20px 0;
+  margin-bottom: 20px;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  color: var(--text-dark);
+  justify-content: center;
+  text-align: center;
 }
 
-p.question-title {
-  font-size: 1.3rem;
+.reviews-wrapper {
+  max-width: 940px;
+  width: 100%;
+}
+
+.review-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.review-card {
+  max-width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--text-white);
+  margin: 0 7px 5px 7px;
+  padding: 0px 15px;
+  border-radius: 10px;
+}
+
+.review-card .review-name {
+  margin: 5px 0;
+  font-size: 1.1rem;
   font-weight: 600;
-  max-width: 85%;
 }
 
-.btn-arrows {
-  margin-left: 10px;
+.review-card .review-text {
+  font-size: 0.95rem;
+  margin-bottom: 0;
 }
 
-.arrow-up {
-  display: none;
+.review-image {
+  height: 100px;
+  width: 100px;
+  padding: 4px;
+  background: #4070f4;
+  border-radius: 50%;
 }
-
-.answer {
-  width: 95%;
-  margin-left: 10px;
-  display: none;
-}
-
-.answer p {
-  line-height: 130%;
-} */
 
 /* SECONDARY CLASSES */
 .inverted {
@@ -355,12 +373,17 @@ p.question-title {
 @media (max-width: 620px) {
   .about-us-wrapper {
     width: 100%;
-    min-height: 6rem;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px 0;
+  }
+
+  .btn-o-nama {
+    margin: 0 0 10px 0;
+  }
+
+  .social-media-icons {
+    margin: 0 0 10px 0;
   }
 
   .horisontal-separator {
@@ -377,5 +400,12 @@ p.question-title {
 
   p.question-title {
     margin-left: 25px;
+  }
+}
+
+@media (max-width: 580px) {
+  .hero-image h6,
+  .hero-image p {
+    width: 80%;
   }
 }
