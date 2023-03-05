@@ -8,7 +8,7 @@ const routes: Routes = [
   { path: '', redirectTo: 'pocetna', pathMatch: 'full' },
   { path: 'pocetna', component: HomeComponent },
   { path: 'o-nama', component: AboutUsComponent },
-  { path: 'testovi', component: TestModuleComponent },
+  { path: 'testovi/:id', component: TestModuleComponent },
 ];
 
 @NgModule({

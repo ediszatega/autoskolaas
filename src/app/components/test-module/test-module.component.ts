@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import tests from './tests.json';
 @Component({
   selector: 'app-test-module',
@@ -22,7 +23,29 @@ export class TestModuleComponent implements OnInit {
 
   points: number = 120;
 
-  ngOnInit(): void {}
+  constructor(private route: ActivatedRoute) {}
+
+  ngOnInit(): void {
+    this.route.paramMap.subscribe((paramMap) => {
+      let testId = paramMap.get('id');
+      console.log(testId, typeof testId);
+      if (testId != null) {
+        this.current_test = tests[parseInt(testId)];
+        this.number_of_questions = this.current_test.questions.length;
+        this.number_of_questions_text = this.number_of_questions.toString();
+        this.current_question_number = 0;
+        this.current_question_number_text = (
+          this.current_question_number + 1
+        ).toString();
+        this.current_question =
+          this.current_test.questions[this.current_question_number];
+        this.answers = this.current_question.answers;
+        this.current_question_text = this.current_question.question;
+        this.results_shown = false;
+        this.points = 120;
+      }
+    });
+  }
 
   selectAnswer(answer: any) {
     answer.checked = !answer.checked;
