@@ -17,12 +17,12 @@ footer {
 
 footer .social-icons,
 .menu {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 10px 0;
   flex-wrap: wrap;
+  padding: 0 !important;
 }
 
 footer .social-icons li a,

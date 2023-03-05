@@ -92,6 +92,10 @@ header {
 }
 
 @media (max-width: 1044px) {
+  header {
+    padding: 14px 8%;
+  }
+
   #burger-menu {
     display: block;
   }
@@ -101,7 +105,6 @@ header {
     top: 100%;
     right: -100%;
     width: 270px;
-    height: 42vh;
     background-color: var(--gray);
     display: flex;
     flex-direction: column;
@@ -129,5 +132,11 @@ header {
 
   .navbar.open {
     right: 2%;
+  }
+}
+
+@media (max-width: 580px) {
+  .account {
+    display: none;
   }
 }
