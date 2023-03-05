@@ -41,9 +41,7 @@ export class TestModuleComponent implements OnInit {
           this.current_test.questions[this.current_question_number];
         this.answers = this.current_question.answers;
         this.current_question_text = this.current_question.question;
-
         this.results_shown = false;
-
         this.points = 120;
       }
     });
