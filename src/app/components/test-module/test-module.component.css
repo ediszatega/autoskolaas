@@ -105,6 +105,7 @@ h3 {
   width: 100%;
   font-size: 0.8rem;
   border: 0.1rem solid rgb(86, 165, 235, 0.25);
+  border-radius: 0.375rem;
   background-color: white;
 }
 
@@ -145,7 +146,8 @@ h3 {
 }
 
 .choice-text {
-  padding: 0.5rem;
+  padding: 0.7rem;
+  margin: 0;
 }
 
 .question-img {
@@ -155,9 +157,9 @@ h3 {
 }
 
 .incorrect {
-  background-color: #dc3545;
+  background-color: #d41528;
 }
 
 .correct {
-  background-color: #28a745;
+  background-color: #60c979;
 }
