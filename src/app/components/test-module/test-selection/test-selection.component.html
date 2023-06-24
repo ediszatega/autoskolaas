@@ -1,0 +1,16 @@
+<div class="test-selection">
+  <div class="label-wrapper">
+    <h1>KATEGORIJA B</h1>
+  </div>
+  <div class="label-wrapper">
+    <label for="test">Odaberite test:</label>
+  </div>
+  <div class="dropdown-wrapper">
+    <select id="test" [(ngModel)]="selectedTest">
+      <option *ngFor="let test of tests" [value]="test">{{ test }}</option>
+    </select>
+  </div>
+  <div class="button-wrapper">
+    <button (click)="onContinue()">Dalje</button>
+  </div>
+</div>
