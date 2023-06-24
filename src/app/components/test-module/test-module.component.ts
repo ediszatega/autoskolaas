@@ -7,7 +7,8 @@ import tests from './tests.json';
   styleUrls: ['./test-module.component.css'],
 })
 export class TestModuleComponent implements OnInit {
-  current_test: any = tests[0];
+  current_test_number: number = 0;
+  current_test: any = tests[this.current_test_number];
   number_of_questions: number = this.current_test.questions.length;
   number_of_questions_text: string = this.number_of_questions.toString();
   current_question_number: number = 0;
@@ -28,9 +29,9 @@ export class TestModuleComponent implements OnInit {
   ngOnInit(): void {
     this.route.paramMap.subscribe((paramMap) => {
       let testId = paramMap.get('id');
-      console.log(testId, typeof testId);
       if (testId != null) {
-        this.current_test = tests[parseInt(testId)];
+        this.current_question_number = parseInt(testId) - 1;
+        this.current_test = tests[this.current_question_number];
         this.number_of_questions = this.current_test.questions.length;
         this.number_of_questions_text = this.number_of_questions.toString();
         this.current_question_number = 0;
