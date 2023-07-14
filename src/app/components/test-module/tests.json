@@ -5419,7 +5419,7 @@
           { "text": "table i stubovi;" },
           { "text": "natpisi i druge oznake." }
         ],
-        "answer": [1, 2, 3],
+        "answer": [1, 2, 4],
         "points": 2
       },
       {
@@ -6491,8 +6491,7 @@
         "question": "Tačan naziv saobraćajnog znaka je:",
         "answers": [
           { "text": "zabrana saobraćaja za sva motorna vozila;" },
-          { "text": "zabrana saobraćaja za sva motorna vozila, osim mopeda." },
-          { "text": "" }
+          { "text": "zabrana saobraćaja za sva motorna vozila, osim mopeda." }
         ],
         "answer": [1],
         "points": 3,
@@ -6539,8 +6538,7 @@
           },
           {
             "text": "obratiti pažnju samo ako se djeca nalaze na putu, a brzinu prilagoditi trenutnim uslovima saobraćaja. "
-          },
-          { "text": "" }
+          }
         ],
         "answer": [1],
         "points": 5,
@@ -8020,6 +8018,7 @@
         "points": 2
       },
       {
+        "question": "Da li se na vozila službe hitne pomoći i vatrogasna vozila, kada posebnim uređajima  daju  svjetlosne  i  zvučne  znakove  primjenju  odredbe  o  zabrani preticanja i obilaženja kolone vozila i zabrani presijecanja kolone pješaka?",
         "answers": [
           { "text": "da;" },
           {
