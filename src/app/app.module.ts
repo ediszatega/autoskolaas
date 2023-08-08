@@ -10,6 +10,8 @@ import { FooterComponent } from './components/common/footer/footer.component';
 import { PhasesSectionComponent } from './components/home/sections/phases-section/phases-section.component';
 import { TestModuleComponent } from './components/test-module/test-module.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { TestSelectionComponent } from './components/test-module/test-selection/test-selection.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,8 +22,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     FooterComponent,
     PhasesSectionComponent,
     TestModuleComponent,
+    TestSelectionComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, NgbModule],
+  imports: [BrowserModule, AppRoutingModule, NgbModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

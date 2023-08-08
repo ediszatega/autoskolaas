@@ -24,12 +24,30 @@
       </div>
     </div>
     <div class="question-nav-buttons-container">
-      <!-- <button class="question-nav-button btn">&#60;&#60;</button>
-      <button class="question-nav-button btn">&#60;</button> -->
-      <button (click)="nextQuestion()" class="question-nav-button btn">
+      <button (click)="updateQuesiton(0)" class="question-nav-button btn">
+        &#60;&#60;
+      </button>
+      <button
+        (click)="updateQuesiton(current_question_number - 1)"
+        class="question-nav-button btn"
+      >
+        &#60;
+      </button>
+      <button
+        (click)="updateQuesiton(current_question_number + 1)"
+        class="question-nav-button btn"
+      >
         &#62;
       </button>
-      <!-- <button class="question-nav-button btn">&#62;&#62;</button> -->
+      <button
+        (click)="updateQuesiton(number_of_questions - 1)"
+        class="question-nav-button btn"
+      >
+        &#62;&#62;
+      </button>
+      <button (click)="finishTest()" class="finish-button btn">
+        Završi test
+      </button>
     </div>
   </div>
 </div>
