@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import tests from './tests.json';
 @Component({
   selector: 'app-test-module',
@@ -22,9 +22,9 @@ export class TestModuleComponent implements OnInit {
 
   results_shown: boolean = false;
 
-  points: number = 120;
+  points: number = 0;
 
-  constructor(private route: ActivatedRoute) {}
+  constructor(private route: ActivatedRoute, private router: Router) {}
 
   ngOnInit(): void {
     this.route.paramMap.subscribe((paramMap) => {
@@ -32,6 +32,7 @@ export class TestModuleComponent implements OnInit {
       if (testId != null) {
         this.current_question_number = parseInt(testId) - 1;
         this.current_test = tests[this.current_question_number];
+        this.resetAnswers(this.current_test);
         this.number_of_questions = this.current_test.questions.length;
         this.number_of_questions_text = this.number_of_questions.toString();
         this.current_question_number = 0;
@@ -43,8 +44,16 @@ export class TestModuleComponent implements OnInit {
         this.answers = this.current_question.answers;
         this.current_question_text = this.current_question.question;
         this.results_shown = false;
-        this.points = 120;
+        this.points = 0;
       }
+    });
+  }
+
+  resetAnswers(current_test: any): void {
+    current_test.questions.forEach((question: any) => {
+      question.answers.forEach((answer: any) => {
+        answer.class = '';
+      });
     });
   }
 
@@ -53,8 +62,12 @@ export class TestModuleComponent implements OnInit {
   }
 
   nextQuestion() {
-    if (this.results_shown) this.updateQuestion();
+    if (this.results_shown) this.updateQuestionNext();
     else this.showQuestionResult();
+  }
+
+  previousQuestion() {
+    this.updateQuestionPrevious();
   }
 
   showQuestionResult() {
@@ -72,12 +85,12 @@ export class TestModuleComponent implements OnInit {
         incorrect_answer = true;
       }
     });
-    if (number_of_correct_answers != number_of_answers || incorrect_answer)
-      this.points -= this.current_question.points;
+    if (!(number_of_correct_answers != number_of_answers || incorrect_answer))
+      this.points += this.current_question.points;
     this.results_shown = true;
   }
 
-  updateQuestion() {
+  updateQuestionNext() {
     if (this.current_question_number + 1 < this.number_of_questions) {
       this.current_question_number++;
       this.current_question =
@@ -86,15 +99,48 @@ export class TestModuleComponent implements OnInit {
         this.current_question_number + 1
       ).toString();
       this.answers = this.current_question.answers;
-      this.answers.forEach((answer: any) => {
-        answer.class = '';
-      });
-      this.results_shown = false;
+      this.results_shown = this.answers.some(
+        (answer: any) => answer.class !== ''
+      );
     } else this.finishTest();
+  }
+
+  updateQuestionPrevious() {
+    if (this.current_question_number > 0) {
+      this.current_question_number--;
+      this.current_question =
+        this.current_test.questions[this.current_question_number];
+      this.current_question_number_text = (
+        this.current_question_number + 1
+      ).toString();
+      this.answers = this.current_question.answers;
+      this.results_shown = this.answers.some(
+        (answer: any) => answer.class !== ''
+      );
+    }
+  }
+
+  updateQuesiton(question_number: number) {
+    if (!this.results_shown && question_number > this.current_question_number) {
+      this.showQuestionResult();
+      return;
+    }
+    if (question_number >= 0 && question_number < this.number_of_questions) {
+      this.current_question_number = question_number;
+      this.current_question =
+        this.current_test.questions[this.current_question_number];
+      this.current_question_number_text = (
+        this.current_question_number + 1
+      ).toString();
+      this.answers = this.current_question.answers;
+      this.results_shown = this.answers.some(
+        (answer: any) => answer.class !== ''
+      );
+    }
   }
 
   finishTest() {
     alert('Završen test\nBroj osvojenih bodova: ' + this.points);
-    location.reload();
+    this.router.navigate(['/testovi']);
   }
 }
