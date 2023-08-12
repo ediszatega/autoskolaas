@@ -7,8 +7,15 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent {
   sideMenuOpened = false;
+  closedSideMenu = true;
 
   toggleSideMenu() {
+    this.sideMenuOpened = !this.sideMenuOpened;
+    this.closedSideMenu = !this.closedSideMenu;
+  }
+
+  navLinkClicked() {
+    this.closedSideMenu = true;
     this.sideMenuOpened = !this.sideMenuOpened;
   }
 }
