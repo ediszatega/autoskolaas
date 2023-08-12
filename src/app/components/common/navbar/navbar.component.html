@@ -4,28 +4,32 @@
   <ul class="navbar" [ngClass]="{ open: sideMenuOpened }">
     <li><a [routerLink]="['o-nama']" routerLinkActive="active">O nama</a></li>
     <li><a href="#">Novosti</a></li>
-    <li><a [routerLink]="['/testovi']" href="#">Testovi</a></li>
+    <li *ngIf="!authService.passwordEntered">
+      <a [routerLink]="['/test-login']" href="#">Testovi</a>
+    </li>
+    <li *ngIf="authService.passwordEntered">
+      <a [routerLink]="['/testovi']" href="#">Testovi</a>
+    </li>
+    <li *ngIf="authService.isLoggedIn">
+      <a [routerLink]="['/test-password']" href="#">Šifra</a>
+    </li>
     <li><a href="#">Pitanja</a></li>
     <li><a href="#">Galerija</a></li>
     <li><a href="#">Kontakt</a></li>
-    <li *ngIf="sideMenuOpened && !authService.isLoggedIn">
-      <a [routerLink]="['/login']">Prijavi se</a>
-    </li>
-    <li *ngIf="authService.isLoggedIn">
-      <a href="#"
-        >Pozdrav, <b>{{ authService.user.displayName }}</b></a
-      >
-    </li>
-    <li *ngIf="authService.isLoggedIn">
-      <a href="#">Odjavi se</a>
-    </li>
   </ul>
   <div class="main">
     <a
-      *ngIf="sideMenuOpened && !authService.isLoggedIn"
+      *ngIf="!authService.isLoggedIn"
+      [routerLink]="['/login']"
       href="#"
       class="user account"
       >Prijavi se</a
+    >
+    <a *ngIf="authService.isLoggedIn" href="#"
+      >Pozdrav, <b>{{ authService.user.displayName }}</b></a
+    >
+    <a *ngIf="authService.isLoggedIn" href="#" (click)="authService.SignOut()"
+      >Odjavi se</a
     >
     <svg
       id="burger-menu"

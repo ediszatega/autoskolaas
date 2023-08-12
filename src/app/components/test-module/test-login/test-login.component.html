@@ -1,0 +1,10 @@
+<div class="container">
+  <label for="password">Molimo unesite šifru za pristup testnom modulu:</label>
+  <div class="input-container">
+    <input type="password" id="password" [(ngModel)]="password" />
+    <button (click)="login()">Dalje</button>
+    <button *ngIf="authService.isLoggedIn" (click)="addPassword()">
+      Promijeni šifru
+    </button>
+  </div>
+</div>

@@ -1,44 +1,50 @@
 import { Injectable } from '@angular/core';
-import { Account } from './account';
+import { Password } from './password';
 import {
   AngularFireDatabase,
   AngularFireList,
   AngularFireObject,
 } from '@angular/fire/compat/database';
+import { Observable, map } from 'rxjs';
 @Injectable({
   providedIn: 'root',
 })
 export class CrudService {
-  accountsRef: AngularFireList<any>;
-  accountRef: AngularFireObject<any>;
+  passwordsRef: AngularFireList<any>;
+  passwordRef: AngularFireObject<any>;
+
   constructor(private db: AngularFireDatabase) {}
-  // Create Account
-  AddAccount(account: Account) {
-    this.accountsRef.push({
-      firstName: account.username,
-      lastName: account.password,
+
+  AddPassword(pass: string) {
+    this.passwordsRef.push({
+      password: pass,
     });
   }
-  // Fetch Single Account Object
-  GetAccount(id: string) {
-    this.accountRef = this.db.object('profili/' + id);
-    return this.accountRef;
+  GetPassword(id: string) {
+    this.passwordRef = this.db.object('passwords/' + id);
+    return this.passwordRef;
   }
-  // Fetch Accounts List
-  GetAccountsList() {
-    this.accountsRef = this.db.list('profili');
-    return this.accountsRef;
+  GetPasswordList() {
+    this.passwordsRef = this.db.list('passwords');
+    return this.passwordsRef;
   }
-  // Update Account Object
-  UpdateAccount(account: Account) {
-    this.accountRef.update({
-      username: account.username,
-      password: account.password,
+  UpdatePassword(pass: Password) {
+    this.passwordRef = this.db.object('passwords/' + pass.$key);
+    this.passwordRef.update({
+      password: pass.password,
     });
   }
-  // Delete Account Object
-  DeleteAccount(id: string) {
-    this.accountRef = this.db.object('profili/' + id);
-    this.accountRef.remove();
+  DeletePassword(id: string) {
+    this.passwordRef = this.db.object('passwords/' + id);
+    this.passwordRef.remove();
+  }
+  CheckPassword(password: string): Observable<boolean> {
+    this.passwordsRef = this.db.list('passwords');
+    return this.passwordsRef.valueChanges().pipe(
+      map((passwords) => {
+        const passwordsList = passwords.map((p) => p.password);
+        return passwordsList.includes(password);
+      })
+    );
   }
 }

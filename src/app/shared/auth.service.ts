@@ -95,6 +95,10 @@ export class AuthService {
     const user = JSON.parse(localStorage.getItem('user')!);
     return user !== null && user.emailVerified !== false ? true : false;
   }
+  get passwordEntered(): boolean {
+    const password = JSON.parse(sessionStorage.getItem('password')!);
+    return password !== null;
+  }
   get user(): User {
     const user = JSON.parse(localStorage.getItem('user')!);
     return user;

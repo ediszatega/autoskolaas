@@ -8,11 +8,15 @@ import { LoginComponent } from './login/login.component';
 import { VerifyEmailComponent } from './login/verify-email/verify-email.component';
 import { SignUpComponent } from './login/sign-up/sign-up.component';
 import { ForgotPasswordComponent } from './login/forgot-password/forgot-password.component';
+import { TestLoginComponent } from './components/test-module/test-login/test-login.component';
+import { TestPasswordComponent } from './components/test-module/test-password/test-password.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'pocetna', pathMatch: 'full' },
   { path: 'pocetna', component: HomeComponent },
   { path: 'o-nama', component: AboutUsComponent },
+  { path: 'test-login', component: TestLoginComponent },
+  { path: 'test-password', component: TestPasswordComponent },
   { path: 'testovi', component: TestSelectionComponent },
   { path: 'testovi/:id', component: TestModuleComponent },
   { path: 'login', component: LoginComponent },

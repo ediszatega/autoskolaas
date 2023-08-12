@@ -24,6 +24,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { LoginComponent } from './login/login.component';
 import { VerifyEmailComponent } from './login/verify-email/verify-email.component';
+import { TestLoginComponent } from './components/test-module/test-login/test-login.component';
+import { TestPasswordComponent } from './components/test-module/test-password/test-password.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +39,8 @@ import { VerifyEmailComponent } from './login/verify-email/verify-email.componen
     TestSelectionComponent,
     LoginComponent,
     VerifyEmailComponent,
+    TestLoginComponent,
+    TestPasswordComponent,
   ],
   imports: [
     BrowserModule,
