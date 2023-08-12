@@ -8,12 +8,25 @@
     <li><a href="#">Pitanja</a></li>
     <li><a href="#">Galerija</a></li>
     <li><a href="#">Kontakt</a></li>
-    <li *ngIf="sideMenuOpened"><a href="#">Prijavi se</a></li>
-    <li *ngIf="sideMenuOpened"><a href="#">Registruj se</a></li>
+    <li *ngIf="sideMenuOpened && !authService.isLoggedIn">
+      <a [routerLink]="['/login']">Prijavi se</a>
+    </li>
+    <li *ngIf="authService.isLoggedIn">
+      <a href="#"
+        >Pozdrav, <b>{{ authService.user.displayName }}</b></a
+      >
+    </li>
+    <li *ngIf="authService.isLoggedIn">
+      <a href="#">Odjavi se</a>
+    </li>
   </ul>
   <div class="main">
-    <a href="#" class="user account">Prijavi se</a>
-    <a href="#" class="account">Registruj se</a>
+    <a
+      *ngIf="sideMenuOpened && !authService.isLoggedIn"
+      href="#"
+      class="user account"
+      >Prijavi se</a
+    >
     <svg
       id="burger-menu"
       (click)="toggleSideMenu()"
