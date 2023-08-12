@@ -10,19 +10,41 @@ import { SignUpComponent } from './login/sign-up/sign-up.component';
 import { ForgotPasswordComponent } from './login/forgot-password/forgot-password.component';
 import { TestLoginComponent } from './components/test-module/test-login/test-login.component';
 import { TestPasswordComponent } from './components/test-module/test-password/test-password.component';
+import { AuthGuard } from './shared/guards/auth.guard';
+import { TestGuard } from './shared/guards/test.guard';
 
 const routes: Routes = [
   { path: '', redirectTo: 'pocetna', pathMatch: 'full' },
   { path: 'pocetna', component: HomeComponent },
   { path: 'o-nama', component: AboutUsComponent },
   { path: 'test-login', component: TestLoginComponent },
-  { path: 'test-password', component: TestPasswordComponent },
-  { path: 'testovi', component: TestSelectionComponent },
-  { path: 'testovi/:id', component: TestModuleComponent },
+  {
+    path: 'test-password',
+    component: TestPasswordComponent,
+    canActivate: [AuthGuard],
+  },
+  {
+    path: 'testovi',
+    component: TestSelectionComponent,
+    canActivate: [TestGuard],
+  },
+  {
+    path: 'testovi/:id',
+    component: TestModuleComponent,
+    canActivate: [TestGuard],
+  },
   { path: 'login', component: LoginComponent },
-  { path: 'sign-up', component: SignUpComponent },
-  { path: 'forgot-password', component: ForgotPasswordComponent },
-  { path: 'verify-email-address', component: VerifyEmailComponent },
+  { path: 'sign-up', component: SignUpComponent, canActivate: [AuthGuard] },
+  {
+    path: 'forgot-password',
+    component: ForgotPasswordComponent,
+    canActivate: [AuthGuard],
+  },
+  {
+    path: 'verify-email-address',
+    component: VerifyEmailComponent,
+    canActivate: [AuthGuard],
+  },
 ];
 
 @NgModule({
