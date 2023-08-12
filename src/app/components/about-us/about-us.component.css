@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .page-wrapper {
   display: flex;
   flex-direction: column;
@@ -7,16 +13,23 @@
   width: 100%;
   margin-bottom: 6rem;
 }
+
 .title {
+  display: flex;
+  flex-direction: column;
   width: 75%;
+  margin-top: 3rem;
+}
+
+.title-text {
+  width: 100%;
   font-size: 3rem;
   font-weight: 400;
-  margin-top: 1rem;
 }
 #title-line {
   width: 146px;
   height: 7px;
-  background-color: #f6f6f6;
+  background-color: #000;
   border: none;
 }
 .grid {
@@ -40,6 +53,7 @@
 .text2 {
   justify-self: end;
   order: 4;
+  text-align: right;
 }
 .image2 {
   justify-self: start;
@@ -54,7 +68,15 @@
   }
 
   .title {
-    width: 100%;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .title-text {
+    text-align: center;
+  }
+
+  #title-line {
     text-align: center;
   }
 
