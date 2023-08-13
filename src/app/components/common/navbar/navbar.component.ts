@@ -9,9 +9,16 @@ import { User } from 'src/app/shared/user';
 })
 export class NavbarComponent {
   sideMenuOpened = false;
+  closedSideMenu = true;
   constructor(public authService: AuthService) {}
 
   toggleSideMenu() {
+    this.sideMenuOpened = !this.sideMenuOpened;
+    this.closedSideMenu = !this.closedSideMenu;
+  }
+
+  navLinkClicked() {
+    this.closedSideMenu = true;
     this.sideMenuOpened = !this.sideMenuOpened;
   }
 }

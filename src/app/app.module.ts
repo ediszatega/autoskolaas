@@ -12,6 +12,8 @@ import { TestModuleComponent } from './components/test-module/test-module.compon
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TestSelectionComponent } from './components/test-module/test-selection/test-selection.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { GalleryComponent } from './components/gallery/gallery.component';
+import { PageTitleComponent } from './components/common/page-title/page-title.component';
 
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
@@ -37,6 +39,8 @@ import { TestPasswordComponent } from './components/test-module/test-password/te
     PhasesSectionComponent,
     TestModuleComponent,
     TestSelectionComponent,
+    GalleryComponent,
+    PageTitleComponent,
     LoginComponent,
     VerifyEmailComponent,
     TestLoginComponent,
