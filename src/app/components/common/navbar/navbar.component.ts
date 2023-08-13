@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { AuthService } from 'src/app/shared/services/auth.service';
+import { User } from 'src/app/shared/user';
 
 @Component({
   selector: 'app-navbar',
@@ -8,6 +10,7 @@ import { Component } from '@angular/core';
 export class NavbarComponent {
   sideMenuOpened = false;
   closedSideMenu = true;
+  constructor(public authService: AuthService) {}
 
   toggleSideMenu() {
     this.sideMenuOpened = !this.sideMenuOpened;

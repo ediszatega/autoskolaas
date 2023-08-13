@@ -1,0 +1,38 @@
+<div class="displayTable">
+  <div class="displayTableCell">
+    <div class="authBlock">
+      <h3>Hvala na registraciji</h3>
+
+      <div class="formGroup" *ngIf="authService.userData as user">
+        <p class="text-center">
+          Poslali smo verifikacijski mail na <strong>{{ user.email }}</strong
+          >.
+        </p>
+        <p class="text-center">
+          Molimo da provjerite email i da kliknete na link u mail-u kako bi
+          verifikovali email:
+        </p>
+      </div>
+
+      <!-- Calling SendVerificationMail() method using authService Api -->
+      <div class="formGroup">
+        <button
+          type="button"
+          class="btn btnPrimary"
+          (click)="authService.SendVerificationMail()"
+        >
+          <i class="fas fa-redo-alt"></i>
+          Ponovo pošalji email
+        </button>
+      </div>
+    </div>
+
+    <div class="redirectToLogin">
+      <span
+        >Idi nazad?<span class="redirect" routerLink="/login">
+          Prijava</span
+        ></span
+      >
+    </div>
+  </div>
+</div>
