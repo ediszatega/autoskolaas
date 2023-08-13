@@ -12,6 +12,8 @@ import { TestModuleComponent } from './components/test-module/test-module.compon
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TestSelectionComponent } from './components/test-module/test-selection/test-selection.component';
 import { FormsModule } from '@angular/forms';
+import { GalleryComponent } from './components/gallery/gallery.component';
+import { PageTitleComponent } from './components/common/page-title/page-title.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,8 @@ import { FormsModule } from '@angular/forms';
     PhasesSectionComponent,
     TestModuleComponent,
     TestSelectionComponent,
+    GalleryComponent,
+    PageTitleComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule, FormsModule],
   providers: [],

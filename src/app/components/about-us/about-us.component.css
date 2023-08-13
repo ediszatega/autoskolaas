@@ -14,24 +14,6 @@
   margin-bottom: 6rem;
 }
 
-.title {
-  display: flex;
-  flex-direction: column;
-  width: 75%;
-  margin-top: 3rem;
-}
-
-.title-text {
-  width: 100%;
-  font-size: 3rem;
-  font-weight: 400;
-}
-#title-line {
-  width: 146px;
-  height: 7px;
-  background-color: #000;
-  border: none;
-}
 .grid {
   display: grid;
   column-gap: 10px;
