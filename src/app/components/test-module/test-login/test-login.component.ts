@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
-import { AuthService } from 'src/app/shared/auth.service';
-import { CrudService } from 'src/app/shared/crud.service';
+import { AuthService } from 'src/app/shared/services/auth.service';
+import { PasswordService } from 'src/app/shared/services/password.service';
 
 @Component({
   selector: 'app-test-login',
@@ -14,7 +14,7 @@ export class TestLoginComponent implements OnInit {
   passwords: string[];
   constructor(
     public authService: AuthService,
-    public crudService: CrudService,
+    public crudService: PasswordService,
     public router: Router,
     public toastr: ToastrService
   ) {}

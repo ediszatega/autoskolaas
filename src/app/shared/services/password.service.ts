@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Password } from './password';
+import { Password } from '../password';
 import {
   AngularFireDatabase,
   AngularFireList,
@@ -9,7 +9,7 @@ import { Observable, map } from 'rxjs';
 @Injectable({
   providedIn: 'root',
 })
-export class CrudService {
+export class PasswordService {
   passwordsRef: AngularFireList<any>;
   passwordRef: AngularFireObject<any>;
 

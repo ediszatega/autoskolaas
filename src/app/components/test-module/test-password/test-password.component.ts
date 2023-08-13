@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { AuthService } from 'src/app/shared/auth.service';
-import { CrudService } from 'src/app/shared/crud.service';
 import { Password } from 'src/app/shared/password';
+import { AuthService } from 'src/app/shared/services/auth.service';
+import { PasswordService } from 'src/app/shared/services/password.service';
 
 @Component({
   selector: 'app-test-password',
@@ -12,7 +12,7 @@ export class TestPasswordComponent {
   currentPassword: Password;
   newPassword: string = '';
 
-  constructor(public crudService: CrudService, authService: AuthService) {
+  constructor(public crudService: PasswordService, authService: AuthService) {
     const passwords = crudService.GetPasswordList();
     passwords.snapshotChanges().subscribe((list) => {
       this.currentPassword = {

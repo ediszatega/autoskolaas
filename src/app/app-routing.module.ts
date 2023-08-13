@@ -38,7 +38,6 @@ const routes: Routes = [
   {
     path: 'forgot-password',
     component: ForgotPasswordComponent,
-    canActivate: [AuthGuard],
   },
   {
     path: 'verify-email-address',
