@@ -14,6 +14,7 @@ import { AuthGuard } from './shared/guards/auth.guard';
 import { TestGuard } from './shared/guards/test.guard';
 import { NewsComponent } from './components/news/news.component';
 import { AddNewsComponent } from './components/news/add-news/add-news.component';
+import { NewsDetailsComponent } from './components/news/news-details/news-details.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'pocetna', pathMatch: 'full' },
@@ -54,6 +55,10 @@ const routes: Routes = [
     path: 'novosti-dodaj',
     component: AddNewsComponent,
     canActivate: [AuthGuard],
+  },
+  {
+    path: 'novosti/:id',
+    component: NewsDetailsComponent,
   },
 ];
 

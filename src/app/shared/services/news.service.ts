@@ -14,9 +14,22 @@ export class NewsService {
       .pipe(
         map((snapshot) =>
           snapshot.map((action) => {
-            return action.payload.val() as News;
+            const key = action.payload.key; // Get the key from snapshot
+            const data = action.payload.val() as News;
+            return { key, ...data } as News;
           })
         )
+      );
+  }
+
+  getNewsById(id: string): Observable<News> {
+    return this.db
+      .object<News>('news/' + id)
+      .valueChanges()
+      .pipe(
+        map((news) => {
+          return news;
+        })
       );
   }
 
@@ -25,7 +38,7 @@ export class NewsService {
   }
 
   async updateNews(news: News): Promise<void> {
-    await this.db.object<News>(`news/${news.$key}`).update(news);
+    await this.db.object<News>(`news/${news.key}`).update(news);
   }
   async deleteNews(newsId: string): Promise<void> {
     await this.db.object(`news/${newsId}`).remove();

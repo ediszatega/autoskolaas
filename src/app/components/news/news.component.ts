@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { News } from 'src/app/shared/news';
 import { AuthService } from 'src/app/shared/services/auth.service';
 import { NewsService } from 'src/app/shared/services/news.service';
@@ -9,12 +10,13 @@ import { NewsService } from 'src/app/shared/services/news.service';
   styleUrls: ['./news.component.css'],
 })
 export class NewsComponent implements OnInit {
-  newsList: News[] = [];
+  newsList: any[] = [];
   currentPage = 1;
   itemsPerPage = 5;
 
   constructor(
     private newsService: NewsService,
+    private router: Router,
     public authService: AuthService
   ) {}
 
@@ -37,5 +39,9 @@ export class NewsComponent implements OnInit {
 
   changePage(page: number) {
     this.currentPage = page;
+  }
+
+  navigateToNewsDetail(newsId: string) {
+    this.router.navigate(['/novosti', newsId]);
   }
 }

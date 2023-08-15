@@ -16,7 +16,7 @@ export class TestPasswordComponent {
     const passwords = crudService.GetPasswordList();
     passwords.snapshotChanges().subscribe((list) => {
       this.currentPassword = {
-        $key: list[0].key,
+        key: list[0].key,
         password: list[0].payload.val().password,
       };
       console.log(this.currentPassword);

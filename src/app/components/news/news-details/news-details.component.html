@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1>{{ news.title }}</h1>
+      <div class="carousel-container">
+        <div
+          *ngFor="let imageUrl of news.imageUrls"
+          [class.active]="imageUrl === currentImage"
+        >
+          <img [src]="imageUrl" alt="News Image" class="carousel-image" />
+        </div>
+      </div>
+      <div class="carousel-controls">
+        <button (click)="prevImage()">Previous</button>
+        <button (click)="nextImage()">Next</button>
+      </div>
+      <p class="news-content">{{ news.content }}</p>
+    </div>
+  </div>
+</div>

@@ -1,4 +1,4 @@
 export interface Password {
-  $key: string;
+  key: string;
   password: string;
 }

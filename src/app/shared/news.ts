@@ -1,5 +1,5 @@
 export interface News {
-  $key: string;
+  key: string;
   title: string;
   content: string;
   date: Date;

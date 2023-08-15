@@ -30,6 +30,7 @@ import { TestLoginComponent } from './components/test-module/test-login/test-log
 import { TestPasswordComponent } from './components/test-module/test-password/test-password.component';
 import { NewsComponent } from './components/news/news.component';
 import { AddNewsComponent } from './components/news/add-news/add-news.component';
+import { NewsDetailsComponent } from './components/news/news-details/news-details.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { AddNewsComponent } from './components/news/add-news/add-news.component'
     TestPasswordComponent,
     NewsComponent,
     AddNewsComponent,
+    NewsDetailsComponent,
   ],
   imports: [
     BrowserModule,
