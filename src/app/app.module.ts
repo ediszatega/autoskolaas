@@ -28,6 +28,8 @@ import { LoginComponent } from './login/login.component';
 import { VerifyEmailComponent } from './login/verify-email/verify-email.component';
 import { TestLoginComponent } from './components/test-module/test-login/test-login.component';
 import { TestPasswordComponent } from './components/test-module/test-password/test-password.component';
+import { NewsComponent } from './components/news/news.component';
+import { AddNewsComponent } from './components/news/add-news/add-news.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +47,8 @@ import { TestPasswordComponent } from './components/test-module/test-password/te
     VerifyEmailComponent,
     TestLoginComponent,
     TestPasswordComponent,
+    NewsComponent,
+    AddNewsComponent,
   ],
   imports: [
     BrowserModule,

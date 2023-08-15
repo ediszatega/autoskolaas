@@ -1,0 +1,57 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="news-list">
+        <button
+          [routerLink]="['/novosti-dodaj']"
+          *ngIf="authService.isLoggedIn"
+          class="btn add-news"
+        >
+          Dodaj Novosti
+        </button>
+        <div
+          *ngFor="
+            let newsItem of newsList.slice(
+              (currentPage - 1) * itemsPerPage,
+              currentPage * itemsPerPage
+            )
+          "
+          class="news-item-container"
+        >
+          <div class="news-item text-center mb-4">
+            <img
+              *ngIf="
+                newsItem.imageUrls && newsItem.imageUrls.length > 0;
+                else placeholderImage
+              "
+              [src]="newsItem.imageUrls[0]"
+              class="img-fluid news-image"
+              alt="News Image"
+            />
+            <ng-template #placeholderImage>
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/autoskolaas-d6187.appspot.com/o/placeholder-image.png?alt=media&token=aa776ff6-4983-4a2b-9fa4-6f7c2f02c656"
+                class="img-fluid news-image"
+                alt="Placeholder Image"
+              />
+            </ng-template>
+            <h2 class="news-title">{{ newsItem.title }}</h2>
+            <p class="small">{{ newsItem.date }} | {{ newsItem.author }}</p>
+            <p class="news-content">
+              {{ newsItem.content | slice : 0 : 150
+              }}{{ newsItem.content.length > 150 ? "..." : "" }}
+            </p>
+          </div>
+        </div>
+      </div>
+      <ul class="pagination">
+        <li
+          *ngFor="let page of pageNumbers"
+          [class.active]="page === currentPage"
+        >
+          <a (click)="changePage(page)">{{ page }}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
