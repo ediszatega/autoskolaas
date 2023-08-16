@@ -23,6 +23,9 @@ export class AddNewsComponent {
   task: AngularFireUploadTask;
   downloadURL: Observable<string>;
 
+  placeholderPath: string = 'placeholder-image.png';
+  placeholderUrl: string =
+    'https://firebasestorage.googleapis.com/v0/b/autoskolaas-d6187.appspot.com/o/placeholder-image.png?alt=media&token=aa776ff6-4983-4a2b-9fa4-6f7c2f02c656';
   images: { filepath: string; url: string }[] = [];
 
   private subscriptions: Subscription[] = [];
@@ -52,17 +55,21 @@ export class AddNewsComponent {
       const user: User = JSON.parse(localStorage.getItem('user')!);
       const currentDate = new Date();
 
+      if (!this.images.length)
+        this.images = [
+          { filepath: this.placeholderPath, url: this.placeholderUrl },
+        ];
       const newsData = {
         title: this.newsForm.value.title,
         content: this.newsForm.value.content,
-        date: currentDate.toLocaleDateString(),
+        date: currentDate.toISOString(),
         author: user.displayName,
-        imageUrls: this.images.map((image) => image.url),
+        images: this.images,
       };
 
       try {
         await this.newsService.createNews(newsData);
-        this.toastr.success('Novost uspješno kreirana', 'Uspjeh');
+        this.toastr.success('Novost uspješno kreirana');
         this.newsForm.reset();
         this.images = [];
       } catch (error) {

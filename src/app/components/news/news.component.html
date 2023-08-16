@@ -22,10 +22,10 @@
             <img
               (click)="navigateToNewsDetail(newsItem.key)"
               *ngIf="
-                newsItem.imageUrls && newsItem.imageUrls.length > 0;
+                newsItem.images && newsItem.images.length > 0;
                 else placeholderImage
               "
-              [src]="newsItem.imageUrls[0]"
+              [src]="newsItem.images[0].url"
               class="img-fluid news-image"
               alt="News Image"
             />
@@ -42,7 +42,9 @@
                 {{ newsItem.title }}
               </a>
             </div>
-            <p class="small">{{ newsItem.date }} | {{ newsItem.author }}</p>
+            <p class="small">
+              {{ newsItem.date.toLocaleDateString() }} | {{ newsItem.author }}
+            </p>
             <p class="news-content">
               {{ newsItem.content | slice : 0 : 150
               }}{{ newsItem.content.length > 150 ? "..." : "" }}

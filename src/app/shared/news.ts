@@ -4,5 +4,5 @@ export interface News {
   content: string;
   date: Date;
   author: string;
-  imageUrls: string[];
+  images: { filepath: string; url: string }[];
 }

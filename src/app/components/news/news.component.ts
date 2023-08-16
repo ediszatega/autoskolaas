@@ -10,7 +10,7 @@ import { NewsService } from 'src/app/shared/services/news.service';
   styleUrls: ['./news.component.css'],
 })
 export class NewsComponent implements OnInit {
-  newsList: any[] = [];
+  newsList: News[] = [];
   currentPage = 1;
   itemsPerPage = 5;
 
@@ -22,12 +22,16 @@ export class NewsComponent implements OnInit {
 
   ngOnInit() {
     this.fetchNews();
-    console.log(this.newsList);
   }
 
   fetchNews() {
     this.newsService.getNews().subscribe((news) => {
-      this.newsList = news;
+      news.sort(
+        (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+      );
+      this.newsList = news.map((newsItem) => {
+        return { ...newsItem, date: new Date(newsItem.date) };
+      });
       console.log(this.newsList);
     });
   }

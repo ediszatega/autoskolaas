@@ -2,19 +2,24 @@
   <div class="row">
     <div class="col">
       <h1>{{ news.title }}</h1>
+      <p class="small">
+        {{ news.date.toLocaleDateString() }} | {{ news.author }}
+      </p>
       <div class="carousel-container">
         <div
-          *ngFor="let imageUrl of news.imageUrls"
-          [class.active]="imageUrl === currentImage"
+          *ngFor="let image of news.images"
+          [hidden]="!(image.url == currentImage)"
         >
-          <img [src]="imageUrl" alt="News Image" class="carousel-image" />
+          <img [src]="image.url" alt="News Image" class="carousel-image" />
         </div>
       </div>
       <div class="carousel-controls">
         <button (click)="prevImage()">Previous</button>
         <button (click)="nextImage()">Next</button>
       </div>
-      <p class="news-content">{{ news.content }}</p>
+      <div class="news-content-wrapper">
+        <p class="news-content">{{ news.content }}</p>
+      </div>
     </div>
   </div>
 </div>

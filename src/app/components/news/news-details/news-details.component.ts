@@ -27,23 +27,27 @@ export class NewsDetailsComponent implements OnInit {
 
   loadNews() {
     this.newsService.getNewsById(this.newsId).subscribe((news) => {
-      this.news = news;
-      console.log(this.news);
-      this.currentImage = this.news.imageUrls[0]; // Show the first image initially
+      this.news = { ...news, date: new Date(news.date) };
+      this.currentImage = this.news.images[0].url; // Show the first image initially
+      console.log(this.currentImage);
     });
   }
 
   prevImage() {
-    const currentIndex = this.news.imageUrls.indexOf(this.currentImage);
+    const currentIndex = this.news.images
+      .map((x) => x.url)
+      .indexOf(this.currentImage);
     if (currentIndex > 0) {
-      this.currentImage = this.news.imageUrls[currentIndex - 1];
+      this.currentImage = this.news.images[currentIndex - 1].url;
     }
   }
 
   nextImage() {
-    const currentIndex = this.news.imageUrls.indexOf(this.currentImage);
-    if (currentIndex < this.news.imageUrls.length - 1) {
-      this.currentImage = this.news.imageUrls[currentIndex + 1];
+    const currentIndex = this.news.images
+      .map((x) => x.url)
+      .indexOf(this.currentImage);
+    if (currentIndex < this.news.images.length - 1) {
+      this.currentImage = this.news.images[currentIndex + 1].url;
     }
   }
 }
