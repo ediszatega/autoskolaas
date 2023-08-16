@@ -12,6 +12,10 @@ import { TestLoginComponent } from './components/test-module/test-login/test-log
 import { TestPasswordComponent } from './components/test-module/test-password/test-password.component';
 import { AuthGuard } from './shared/guards/auth.guard';
 import { TestGuard } from './shared/guards/test.guard';
+import { NewsComponent } from './components/news/news.component';
+import { AddNewsComponent } from './components/news/add-news/add-news.component';
+import { NewsDetailsComponent } from './components/news/news-details/news-details.component';
+import { EditNewsComponent } from './components/news/edit-news/edit-news.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'pocetna', pathMatch: 'full' },
@@ -42,6 +46,24 @@ const routes: Routes = [
   {
     path: 'verify-email-address',
     component: VerifyEmailComponent,
+    canActivate: [AuthGuard],
+  },
+  {
+    path: 'novosti',
+    component: NewsComponent,
+  },
+  {
+    path: 'novosti-dodaj',
+    component: AddNewsComponent,
+    canActivate: [AuthGuard],
+  },
+  {
+    path: 'novosti/:id',
+    component: NewsDetailsComponent,
+  },
+  {
+    path: 'novosti/:id/uredi',
+    component: EditNewsComponent,
     canActivate: [AuthGuard],
   },
 ];

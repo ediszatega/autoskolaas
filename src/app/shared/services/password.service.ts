@@ -29,7 +29,7 @@ export class PasswordService {
     return this.passwordsRef;
   }
   UpdatePassword(pass: Password) {
-    this.passwordRef = this.db.object('passwords/' + pass.$key);
+    this.passwordRef = this.db.object('passwords/' + pass.key);
     this.passwordRef.update({
       password: pass.password,
     });
