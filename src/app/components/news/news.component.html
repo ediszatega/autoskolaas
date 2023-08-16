@@ -20,25 +20,17 @@
         >
           <div class="news-item text-center mb-4">
             <img
+              *ngIf="newsItem.images && newsItem.images.length > 0"
               (click)="navigateToNewsDetail(newsItem.key)"
-              *ngIf="
-                newsItem.images && newsItem.images.length > 0;
-                else placeholderImage
-              "
               [src]="newsItem.images[0].url"
               class="img-fluid news-image"
               alt="News Image"
             />
-            <ng-template #placeholderImage>
-              <img
-                (click)="navigateToNewsDetail(newsItem.key)"
-                src="https://firebasestorage.googleapis.com/v0/b/autoskolaas-d6187.appspot.com/o/placeholder-image.png?alt=media&token=aa776ff6-4983-4a2b-9fa4-6f7c2f02c656"
-                class="img-fluid news-image"
-                alt="Placeholder Image"
-              />
-            </ng-template>
             <div class="news-title-wrapper">
-              <a class="news-title">
+              <a
+                (click)="navigateToNewsDetail(newsItem.key)"
+                class="news-title"
+              >
                 {{ newsItem.title }}
               </a>
             </div>

@@ -1,11 +1,15 @@
 import { Injectable } from '@angular/core';
 import { AngularFireDatabase } from '@angular/fire/compat/database';
 import { News } from '../news';
-import { Observable, map } from 'rxjs';
+import { Observable, map, of, switchMap } from 'rxjs';
+import { AngularFireStorage } from '@angular/fire/compat/storage';
 
 @Injectable({ providedIn: 'root' })
 export class NewsService {
-  constructor(private db: AngularFireDatabase) {}
+  constructor(
+    private db: AngularFireDatabase,
+    private afStorage: AngularFireStorage
+  ) {}
 
   getNews(): Observable<News[]> {
     return this.db
@@ -16,7 +20,7 @@ export class NewsService {
           snapshot.map((action) => {
             const key = action.payload.key; // Get the key from snapshot
             const data = action.payload.val() as News;
-            return { key, ...data } as News;
+            return { key, ...data, date: new Date(data.date) } as News;
           })
         )
       );
@@ -28,7 +32,7 @@ export class NewsService {
       .valueChanges()
       .pipe(
         map((news) => {
-          return news;
+          return { key: id, ...news, date: new Date(news.date) };
         })
       );
   }
@@ -40,7 +44,25 @@ export class NewsService {
   async updateNews(news: News): Promise<void> {
     await this.db.object<News>(`news/${news.key}`).update(news);
   }
-  async deleteNews(newsId: string): Promise<void> {
-    await this.db.object(`news/${newsId}`).remove();
+  deleteNews(id: string): Observable<void> {
+    return this.db
+      .object<News>('news/' + id)
+      .valueChanges()
+      .pipe(
+        switchMap((news) => {
+          if (!news.images || news.images.length === 0) {
+            return of(null);
+          }
+          const imageDeletionObservables = [];
+          for (const image of news.images) {
+            const imageRef = this.afStorage.ref(image.filepath);
+            imageDeletionObservables.push(imageRef.delete());
+          }
+          return imageDeletionObservables;
+        }),
+        switchMap(() => {
+          return this.db.object(`news/${id}`).remove();
+        })
+      );
   }
 }

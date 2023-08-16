@@ -29,10 +29,7 @@ export class NewsComponent implements OnInit {
       news.sort(
         (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
       );
-      this.newsList = news.map((newsItem) => {
-        return { ...newsItem, date: new Date(newsItem.date) };
-      });
-      console.log(this.newsList);
+      this.newsList = news.sort((a, b) => b.date.getTime() - a.date.getTime());
     });
   }
 

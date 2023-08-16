@@ -1,5 +1,5 @@
 <div class="pt-3 pb-2 mb-3 border-bottom">
-  <h2 class="h2">Dodaj Novosti</h2>
+  <h2 class="h2">Uredi Novosti</h2>
 </div>
 <form [formGroup]="newsForm" (ngSubmit)="submitNewsData()" novalidate>
   <div class="row">
@@ -64,18 +64,11 @@
           Nazad
         </button>
         <button
-          type="button"
-          class="btn btn-secondary gap-right"
-          (click)="resetForm()"
-        >
-          Reset
-        </button>
-        <button
           type="submit"
           class="btn btn-success"
           [disabled]="!newsForm.valid"
         >
-          Dodaj Novosti
+          Uredi Novost
         </button>
       </div>
     </div>
