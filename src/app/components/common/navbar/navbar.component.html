@@ -20,7 +20,6 @@
     <li>
       <a
         [routerLink]="['/testovi']"
-        href="#"
         routerLinkActive="active"
         (click)="navLinkClicked()"
         >Testovi</a
@@ -32,7 +31,10 @@
       >
     </li>
     <li>
-      <a href="#" routerLinkActive="active" (click)="navLinkClicked()"
+      <a
+        [routerLink]="['/galerija']"
+        routerLinkActive="active"
+        (click)="navLinkClicked()"
         >Galerija</a
       >
     </li>

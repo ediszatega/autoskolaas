@@ -1,1 +1,46 @@
-<p>gallery works!</p>
+<div class="page-wrapper">
+  <app-page-title title_text="Galerija"></app-page-title>
+  <div *ngIf="showFullImg" id="fullImgBox" class="full-img">
+    <div class="img-background" (click)="closeFullImg()">
+      <img
+        id="fullImg"
+        src="../../../assets/gallery/gallery_img{{ imgId }}.jpg"
+        (click)="fullImgClick($event)"
+      />
+    </div>
+  </div>
+  <div class="img-gallery">
+    <img
+      src="../../../assets/gallery/gallery_img1.jpg"
+      (click)="openFullImg(1, $event)"
+    />
+    <img
+      src="../../../assets/gallery/gallery_img2.jpg"
+      (click)="openFullImg(2, $event)"
+    />
+    <img
+      src="../../../assets/gallery/gallery_img3.jpg"
+      (click)="openFullImg(3, $event)"
+    />
+    <img
+      src="../../../assets/gallery/gallery_img4.jpg"
+      (click)="openFullImg(4, $event)"
+    />
+    <img
+      src="../../../assets/gallery/gallery_img5.jpg"
+      (click)="openFullImg(5, $event)"
+    />
+    <img
+      src="../../../assets/gallery/gallery_img6.jpg"
+      (click)="openFullImg(6, $event)"
+    />
+    <img
+      src="../../../assets/gallery/gallery_img7.jpg"
+      (click)="openFullImg(7, $event)"
+    />
+    <img
+      src="../../../assets/gallery/gallery_img8.jpg"
+      (click)="openFullImg(8, $event)"
+    />
+  </div>
+</div>
