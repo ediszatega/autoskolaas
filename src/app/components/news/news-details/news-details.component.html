@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <button class="btn btn-secondary gap-right" (click)="back()">
+        Nazad
+      </button>
+      <h1>{{ news.title }}</h1>
+      <p class="small">
+        {{ news.date.toLocaleDateString() }} | {{ news.author }}
+      </p>
+      <div class="carousel-container">
+        <div
+          *ngFor="let image of news.images"
+          [hidden]="!(image.url == currentImage)"
+        >
+          <div class="image-container">
+            <img [src]="image.url" alt="News Image" class="carousel-image" />
+          </div>
+        </div>
+      </div>
+      <div *ngIf="news.images && news.images.length > 0">
+        <p>({{ currentNumber }}/{{ maxNumber }})</p>
+        <div class="carousel-controls">
+          <button class="btn btn-secondary" (click)="prevImage()">&lt;</button>
+          <button class="btn btn-secondary" (click)="nextImage()">&gt;</button>
+        </div>
+      </div>
+      <div class="news-content-wrapper">
+        <p class="news-content">{{ news.content }}</p>
+      </div>
+      <button [routerLink]="['uredi']" class="btn btn-secondary">
+        Uredi Novost
+      </button>
+      <button (click)="deleteNews()" class="btn btn-secondary">
+        Izbriši Novost
+      </button>
+    </div>
+  </div>
+</div>

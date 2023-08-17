@@ -13,16 +13,38 @@
       >
     </li>
     <li>
-      <a href="#" routerLinkActive="active" (click)="navLinkClicked()"
+      <a
+        [routerLink]="['/novosti']"
+        href="#"
+        routerLinkActive="active"
+        (click)="navLinkClicked()"
         >Novosti</a
       >
     </li>
-    <li>
+    <li *ngIf="!authService.passwordEntered">
+      <a
+        [routerLink]="['/test-login']"
+        href="#"
+        routerLinkActive="active"
+        (click)="navLinkClicked()"
+        >Testovi</a
+      >
+    </li>
+    <li *ngIf="authService.passwordEntered">
       <a
         [routerLink]="['/testovi']"
         routerLinkActive="active"
         (click)="navLinkClicked()"
         >Testovi</a
+      >
+    </li>
+    <li *ngIf="authService.isLoggedIn">
+      <a
+        [routerLink]="['/test-password']"
+        href="#"
+        routerLinkActive="active"
+        (click)="navLinkClicked()"
+        >Šifra</a
       >
     </li>
     <li>
@@ -43,16 +65,24 @@
         >Kontakt</a
       >
     </li>
-    <li *ngIf="sideMenuOpened && !closedSideMenu">
-      <a href="#" (click)="navLinkClicked()">Prijavi se</a>
-    </li>
-    <li *ngIf="sideMenuOpened && !closedSideMenu">
-      <a href="#" (click)="navLinkClicked()">Registruj se</a>
-    </li>
   </ul>
   <div class="main">
-    <a href="#" routerLinkActive="active" class="user account">Prijavi se</a>
-    <a href="#" routerLinkActive="active" class="account">Registruj se</a>
+    <a
+      *ngIf="!authService.isLoggedIn"
+      href="#"
+      [routerLink]="['/login']"
+      routerLinkActive="active"
+      class="user account"
+      >Prijavi se</a
+    >
+    <a
+      *ngIf="authService.isLoggedIn"
+      href="#"
+      routerLinkActive="active"
+      class="account"
+      (click)="authService.SignOut()"
+      >Odjavi se</a
+    >
     <svg
       id="burger-menu"
       (click)="toggleSideMenu()"
