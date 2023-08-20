@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-gallery',
@@ -8,18 +8,20 @@ import { Component } from '@angular/core';
 export class GalleryComponent {
   showFullImg: boolean = false;
   imgId: any = '';
-  isScrollEnabled: boolean = true;
+  /* isScrollEnabled: boolean = true; */
+  /* @Output() openImage = new EventEmitter<boolean>(); */
 
   closeFullImg() {
-    this.showFullImg = false;
-    document.body.style.overflow = 'auto';
+    /* this.showFullImg = false;
+    document.body.style.overflow = 'auto'; */
   }
 
-  openFullImg(imgId: number, event: Event) {
-    this.showFullImg = true;
+  openFullImg(imgId: number) {
+    /* this.showFullImg = true;
     this.imgId = imgId;
     this.isScrollEnabled = !this.isScrollEnabled;
-
+    this.openImage.emit(this.showFullImg);
+    this.galleryService.setBoolean(this.showFullImg); */
     /*     const pageWrapper = document.querySelector('.page-wrapper') as HTMLElement;
 
     if (pageWrapper) {
@@ -27,11 +29,10 @@ export class GalleryComponent {
     }
 
     event.preventDefault(); */
-
-    document.body.style.overflow = 'hidden';
+    /* document.body.style.overflow = 'hidden'; */
   }
 
   fullImgClick(event: Event) {
-    event.stopPropagation();
+    /* event.stopPropagation(); */
   }
 }

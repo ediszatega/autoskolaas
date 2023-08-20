@@ -47,6 +47,15 @@
         >Šifra</a
       >
     </li>
+    <li *ngIf="authService.isLoggedIn">
+      <a
+        [routerLink]="['/sign-up']"
+        href="#"
+        routerLinkActive="active"
+        (click)="navLinkClicked()"
+        >Dodaj korisnika</a
+      >
+    </li>
     <li>
       <a href="#" routerLinkActive="active" (click)="navLinkClicked()"
         >Pitanja</a

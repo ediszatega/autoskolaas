@@ -1,41 +1,35 @@
-<div class="displayTable">
-  <div class="displayTableCell">
-    <div class="authBlock">
-      <h3>Prijavi se</h3>
-      <div class="formGroup">
-        <input
-          type="text"
-          class="formControl"
-          placeholder="Email"
-          #userEmail
-          required
-        />
-      </div>
+<div class="page-wrapper">
+  <app-page-title title_text="Prijavi se"></app-page-title>
+  <div class="container">
+    <div class="formGroup">
+      <input
+        type="text"
+        class="formControl"
+        placeholder="Email"
+        #userEmail
+        required
+      />
+    </div>
 
-      <div class="formGroup">
-        <input
-          type="password"
-          class="formControl"
-          placeholder="Password"
-          #userPassword
-          required
-        />
-      </div>
+    <div class="formGroup">
+      <input
+        type="password"
+        class="formControl"
+        placeholder="Password"
+        #userPassword
+        required
+      />
+    </div>
 
-      <!-- Calling SignIn Api from AuthService -->
-      <div class="formGroup">
-        <button
-          (click)="authService.SignIn(userEmail.value, userPassword.value)"
-        >
-          Prijava
-        </button>
-      </div>
+    <!-- Calling SignIn Api from AuthService -->
+    <div class="formGroup">
+      <button (click)="authService.SignIn(userEmail.value, userPassword.value)">
+        Prijava
+      </button>
+    </div>
 
-      <div class="forgotPassword">
-        <a [routerLink]="['/forgot-password']" href="#"
-          >Zaboravili ste šifru?</a
-        >
-      </div>
+    <div class="forgotPassword">
+      <a [routerLink]="['/forgot-password']" href="#">Zaboravili ste šifru?</a>
     </div>
   </div>
 </div>

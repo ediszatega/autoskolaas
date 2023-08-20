@@ -3,6 +3,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 import { News } from 'src/app/shared/news';
 import { NewsService } from 'src/app/shared/services/news.service';
+import { AuthService } from 'src/app/shared/services/auth.service';
 
 @Component({
   selector: 'app-news-details',
@@ -21,7 +22,8 @@ export class NewsDetailsComponent implements OnInit {
     private route: ActivatedRoute,
     private newsService: NewsService,
     private router: Router,
-    private toastr: ToastrService
+    private toastr: ToastrService,
+    public authService: AuthService
   ) {}
 
   ngOnInit() {
