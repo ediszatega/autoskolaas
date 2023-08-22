@@ -11,7 +11,7 @@
   align-items: center;
   height: 100%;
   width: 100%;
-  margin-bottom: 6rem;
+  margin-bottom: 9rem;
 }
 
 .container {
@@ -27,7 +27,6 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  border-bottom: 2px solid #b5b5b5;
   margin-bottom: 2rem;
 }
 
@@ -36,6 +35,8 @@
   height: 180px;
   object-fit: cover;
   cursor: pointer;
+  border-radius: 10px 0 0 10px;
+  border-bottom: 3px solid #b5b5b5;
 }
 
 .news-content {
@@ -45,6 +46,9 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: space-between;
+  background-color: #f8f8f8;
+  border-radius: 0 10px 10px 0;
+  border-bottom: 3px solid #b5b5b5;
 }
 
 .title-text {

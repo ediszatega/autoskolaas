@@ -53,7 +53,7 @@
         href="#"
         routerLinkActive="active"
         (click)="navLinkClicked()"
-        >Dodaj korisnika</a
+        >Korisnik</a
       >
     </li>
     <li>
@@ -70,7 +70,10 @@
       >
     </li>
     <li>
-      <a href="#" routerLinkActive="active" (click)="navLinkClicked()"
+      <a
+        [routerLink]="['/kontakt']"
+        routerLinkActive="active"
+        (click)="navLinkClicked()"
         >Kontakt</a
       >
     </li>

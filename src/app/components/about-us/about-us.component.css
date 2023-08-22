@@ -11,7 +11,7 @@
   align-items: center;
   height: 100%;
   width: 100%;
-  margin-bottom: 6rem;
+  margin-bottom: 9rem;
 }
 
 .grid {
@@ -22,6 +22,7 @@
   justify-content: space-between;
   align-items: center;
   width: 75%;
+  max-width: 1200px;
   height: 100%;
 }
 .text1 {
