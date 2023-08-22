@@ -17,12 +17,14 @@ import { NewsComponent } from './components/news/news.component';
 import { AddNewsComponent } from './components/news/add-news/add-news.component';
 import { NewsDetailsComponent } from './components/news/news-details/news-details.component';
 import { EditNewsComponent } from './components/news/edit-news/edit-news.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'pocetna', pathMatch: 'full' },
   { path: 'pocetna', component: HomeComponent },
   { path: 'o-nama', component: AboutUsComponent },
   { path: 'galerija', component: GalleryComponent },
+  { path: 'kontakt', component: ContactComponent },
   { path: 'test-login', component: TestLoginComponent },
   {
     path: 'test-password',

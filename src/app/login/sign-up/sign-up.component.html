@@ -1,59 +1,55 @@
-<div class="displayTable">
-  <div class="displayTableCell">
-    <div class="authBlock">
-      <h3>Registracija</h3>
+<div class="page-wrapper">
+  <div class="title">
+    <p class="title-text">Registracija</p>
+    <hr id="title-line" />
+  </div>
+  <div class="container">
+    <div class="formGroup">
+      <input
+        type="email"
+        class="formControl"
+        placeholder="Email Address"
+        #userEmail
+        required
+      />
+    </div>
 
-      <div class="formGroup">
-        <input
-          type="email"
-          class="formControl"
-          placeholder="Email Address"
-          #userEmail
-          required
-        />
-      </div>
+    <div class="formGroup">
+      <input
+        type="text"
+        class="formControl"
+        placeholder="Name"
+        #userName
+        required
+      />
+    </div>
 
-      <div class="formGroup">
-        <input
-          type="text"
-          class="formControl"
-          placeholder="Name"
-          #userName
-          required
-        />
-      </div>
+    <div class="formGroup">
+      <input
+        type="password"
+        class="formControl"
+        placeholder="Password"
+        #userPwd
+        required
+      />
+    </div>
 
-      <div class="formGroup">
-        <input
-          type="password"
-          class="formControl"
-          placeholder="Password"
-          #userPwd
-          required
-        />
-      </div>
+    <div class="formGroup">
+      <input
+        type="button"
+        class="btn btnPrimary"
+        value="Registruj se"
+        (click)="
+          authService.SignUp(userEmail.value, userName.value, userPwd.value)
+        "
+      />
+    </div>
 
-      <div class="formGroup">
-        <input
-          type="button"
-          class="btn btnPrimary"
-          value="Sign Up"
-          (click)="
-            authService.SignUp(userEmail.value, userName.value, userPwd.value)
-          "
-        />
-      </div>
-
-      <div class="formGroup">
-        <span class="or"><span class="orInner">Ili</span></span>
-      </div>
-
-      <div class="redirectToLogin">
-        <span
-          >Već imate korisnički račun?
-          <span class="redirect" routerLink="/login">Prijava</span></span
-        >
-      </div>
+    <div class="redirectToLogin">
+      <span
+        >Već imate korisnički račun?
+        <a class="redirect" routerLink="/login">Prijava</a></span
+      >
     </div>
   </div>
 </div>
