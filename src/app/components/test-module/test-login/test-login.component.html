@@ -3,7 +3,7 @@
   <div class="input-container">
     <input type="password" id="password" [(ngModel)]="password" />
     <button (click)="login()">Dalje</button>
-    <button *ngIf="authService.isLoggedIn" (click)="addPassword()">
+    <button *ngIf="authService.isLoggedIn" [routerLink]="['/test-password']">
       Promijeni šifru
     </button>
   </div>
