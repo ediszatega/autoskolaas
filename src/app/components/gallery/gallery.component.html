@@ -1,15 +1,7 @@
 <div class="page-wrapper">
   <app-page-title title_text="Galerija"></app-page-title>
-  <div *ngIf="showFullImg" id="fullImgBox" class="full-img">
-    <div class="img-background" (click)="closeFullImg()">
-      <img
-        id="fullImg"
-        src="../../../assets/gallery/gallery_img{{ imgId }}.jpg"
-        (click)="fullImgClick($event)"
-      />
-    </div>
-  </div>
-  <div *ngIf="authService.isLoggedIn" class="row">
+  <div *ngIf="authService.isLoggedIn" class="add-img">
+    <p>Dodajte novu sliku:</p>
     <div class="col-md-12 mb-3">
       <input
         type="file"

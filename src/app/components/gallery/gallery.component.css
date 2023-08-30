@@ -14,6 +14,16 @@
   margin-bottom: 9rem;
 }
 
+.add-img {
+  max-width: 500px;
+  width: 75%;
+  text-align: center;
+}
+
+.add-img p {
+  margin-bottom: 0.5rem;
+}
+
 .img-gallery {
   width: 75%;
   max-width: 1200px;
@@ -28,42 +38,8 @@
   object-fit: cover;
 }
 
-.full-img {
-  width: 100%;
-  height: 100vh; /* 
-  background: rgba(0, 0, 0, 0.9); */
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 3rem 0;
-}
-
-.full-img img {
-  width: 40%;
-  aspect-ratio: 1/1;
-}
-
-.img-background {
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.9);
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 3rem 0;
-}
-
-.full-img span {
-  position: absolute;
-  top: 5%;
-  right: 5%;
-  font-size: 30px;
-  color: #fff;
-  cursor: pointer;
+.remove-img-btn {
+  text-align: center;
+  margin: 0.5rem 0.5rem 0.5rem 0;
+  padding: 6px 12px;
 }
