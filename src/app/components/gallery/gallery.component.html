@@ -1,46 +1,31 @@
 <div class="page-wrapper">
   <app-page-title title_text="Galerija"></app-page-title>
-  <div *ngIf="showFullImg" id="fullImgBox" class="full-img">
-    <div class="img-background" (click)="closeFullImg()">
-      <img
-        id="fullImg"
-        src="../../../assets/gallery/gallery_img{{ imgId }}.jpg"
-        (click)="fullImgClick($event)"
+  <div *ngIf="authService.isLoggedIn" class="add-img">
+    <p>Dodajte novu sliku:</p>
+    <div class="col-md-12 mb-3">
+      <input
+        type="file"
+        id="file"
+        name="image"
+        autocomplete="off"
+        #image
+        multiple
+        (change)="onFilesSelected($event)"
+        class="form-control"
       />
     </div>
   </div>
   <div class="img-gallery">
-    <img
-      src="../../../assets/gallery/gallery_img1.jpg"
-      (click)="openFullImg(1)"
-    />
-    <img
-      src="../../../assets/gallery/gallery_img2.jpg"
-      (click)="openFullImg(2)"
-    />
-    <img
-      src="../../../assets/gallery/gallery_img3.jpg"
-      (click)="openFullImg(3)"
-    />
-    <img
-      src="../../../assets/gallery/gallery_img4.jpg"
-      (click)="openFullImg(4)"
-    />
-    <img
-      src="../../../assets/gallery/gallery_img5.jpg"
-      (click)="openFullImg(5)"
-    />
-    <img
-      src="../../../assets/gallery/gallery_img6.jpg"
-      (click)="openFullImg(6)"
-    />
-    <img
-      src="../../../assets/gallery/gallery_img7.jpg"
-      (click)="openFullImg(7)"
-    />
-    <img
-      src="../../../assets/gallery/gallery_img8.jpg"
-      (click)="openFullImg(8)"
-    />
+    <div *ngFor="let image of images">
+      <img src="{{ image.url }}" (click)="openFullImg(image)" />
+      <button
+        *ngIf="authService.isLoggedIn"
+        type="button"
+        class="btn btn-secondary remove-img-btn"
+        (click)="removeSelectedImage(image)"
+      >
+        X
+      </button>
+    </div>
   </div>
 </div>
