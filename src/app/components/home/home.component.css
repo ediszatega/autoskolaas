@@ -137,6 +137,13 @@
   text-align: center;
 }
 
+.section-subtitle {
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  margin-top: -1rem;
+}
+
 .phases {
   display: flex;
   flex-direction: column;
@@ -146,6 +153,7 @@
 }
 
 .phase {
+  min-width: 100%;
   display: flex;
   justify-content: center;
   margin-bottom: 15px;
@@ -311,6 +319,11 @@
   margin-bottom: -6%;
 }
 
+.read-more-less {
+  font-weight: 600;
+  cursor: pointer;
+}
+
 /* SECONDARY CLASSES */
 .inverted {
   color: var(--text-white);
@@ -350,7 +363,7 @@
   }
 
   .faq-questions {
-    width: 80%;
+    width: 95%;
     justify-content: center;
   }
 
@@ -449,5 +462,10 @@
   .hero-image h6,
   .hero-image p {
     width: 80%;
+  }
+
+  .review-card {
+    margin-right: 1rem;
+    margin-left: 1rem;
   }
 }

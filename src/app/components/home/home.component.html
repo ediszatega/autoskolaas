@@ -45,7 +45,7 @@
             </svg>
           </a>
           <a
-            href="https://instagram.com/auto_skola_ais?igshid=NTdlMDg3MTY"
+            href="https://www.instagram.com/autoskola_ais/?fbclid=IwAR1G-thlgriE4trPw3zI2tU941Fz5IFJwWzTSp0bPom1ryX24kto_CqWOQg"
             target="_blank"
             ><svg
               width="30"
@@ -93,12 +93,22 @@
           <p>1.</p>
         </div>
         <div class="instruction">
-          <p class="instruction-title">Instrucion title</p>
+          <p class="instruction-title">Ljekarsko uvjerenje</p>
           <p class="instruction-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-            accusamus, quos cumque ratione eligendi corrupti molestiae magni
-            voluptatibus similique deserunt sapiente facere? Voluptatem nostrum
-            reprehenderit aliquid assumenda quo dolorum fugiat!
+            Zdravstvene preglede kandidata za vozača i vozača motornog vozila
+            obavljaju zdravstvene ustanove koje su za to ovlaštene u skladu sa
+            zakonima. U Konjicu je to Dom Zdravlja. U slučaju nekih nejasnoća do
+            ljekarskog uvjerenja ćete doći najbrže i najlakše u dogovoru sa
+            osobljem autoškole "A&S".
+          </p>
+          <p *ngIf="more_less" class="instruction-description">
+            Ukoliko je potrebno, naše osoblje će Vas odvesti do zdravstvene
+            ustanove, biti sa Vama i vratiti Vas ponovo tamo gdje Vama odgovara.
+            Ljekarsko uvjerenje sadrži 4 pregleda: oftamolog, neuropsihijatar,
+            psiholog, medicina rada (pregled i zaključak)
+          </p>
+          <p class="read-more-less" (click)="readMoreLess()">
+            {{ more_less_label }}
           </p>
         </div>
       </div>
@@ -107,11 +117,26 @@
           <p>2.</p>
         </div>
         <div class="instruction">
-          <p class="instruction-title">Instrucion title</p>
+          <p class="instruction-title">
+            Teoretska obuka u kabinetu autoškole "A&S"
+          </p>
           <p class="instruction-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-            accusamus, quos cumque ratione eligendi corrupti molestiae magni
-            voluptatibus similique deserunt sapiente facere?
+            U autoškoli "A&S" teoretsku nastavu možete pohađati svakog radnog
+            dana u prijepodnevnim i popodnevnim terminima po izboru. Broj časova
+            zavisi od kategorije za koji kandidat polaže. U toku jednog dana
+            kandidat može imati najviše četri časa. Teoretska nastava se održava
+            u prostorijama autoškole "A&S" uz korištenje adekvatne opreme i
+            literature.
+          </p>
+          <p *ngIf="more_less" class="instruction-description">
+            Kabinet se nalazi u ulici Maršala Tita bb (SC Partizanovo).
+            Predavanja održava licencirani predavač teoretske nastave MA.Sanida
+            Prevljak diplomirani inžinjer saobraćaja i komunikacija. Na časovima
+            teoretske nastave savladaćete kompletno gradivo i biti spremni za
+            uspješno polaganje testova iz prvog pokušaja.
+          </p>
+          <p class="read-more-less" (click)="readMoreLess()">
+            {{ more_less_label }}
           </p>
         </div>
       </div>
@@ -120,14 +145,66 @@
           <p>3.</p>
         </div>
         <div class="instruction">
-          <p class="instruction-title">Instrucion title</p>
+          <p class="instruction-title">
+            Predavanje iz Osnova pružanja prve pomoći
+          </p>
           <p class="instruction-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-            accusamus, quos cumque ratione eligendi corrupti molestiae magni
-            voluptatibus similique deserunt sapiente facere? Lorem ipsum dolor
-            sit amet consectetur adipisicing elit. Sunt accusamus, quos cumque
-            ratione eligendi corrupti molestiae magni voluptatibus similique
-            deserunt sapiente facere?
+            Predavanje iz Osnova pružanja prve pomoći održava se u prostorijama
+            Crvenog križa općine Konjic, Kolonija bb.
+          </p>
+        </div>
+      </div>
+      <div class="phase">
+        <div class="number">
+          <p>4.</p>
+        </div>
+        <div class="instruction">
+          <p class="instruction-title">
+            Polaganje Ispita poznavanja propisa o sigurnosti saobraćaja na
+            putevima (testovi) i polaganje Ispita iz osnova pružanja prve pomoći
+          </p>
+          <p class="instruction-description">
+            Polaganje teoretskog djela vozačkog ispita se obavlja nakon završene
+            edukacije o poznavanju saobraćajnih propisa. Polaganje prve pomoći
+            se obavlja nakon završene edukacije iz osnova prve pomoći. Polaganje
+            testova i prve pomoći se vrši pred komisijom koju organizuje
+            Ministarstvo obrazovanja HNK.
+          </p>
+          <p *ngIf="more_less" class="instruction-description">
+            Naš predavač će za vas izvršiti kompletan proces prijave za
+            polaganje, te vas obavjestiti o terminu polaganja. Polaganje
+            teoretskog djela vozačkog ispita i prve pomoći u Konjicu održava se
+            u prostorijama JU "Srednja škola Konjic", dva puta mjesečno.
+          </p>
+          <p class="read-more-less" (click)="readMoreLess()">
+            {{ more_less_label }}
+          </p>
+        </div>
+      </div>
+      <div class="phase">
+        <div class="number">
+          <p>5.</p>
+        </div>
+        <div class="instruction">
+          <p class="instruction-title">
+            Obuka upravljanja motornim vozilom (praktični dio) i polaganje
+            ispita iz upravljanja motornim vozilom
+          </p>
+          <p class="instruction-description">
+            Nakon položenog ispita teoretskog djela i prve pomoći kandidat može
+            početi sa procesom obuke upravljanja motornim vozilom u dogovoru sa
+            instruktorom. Način, raspored i termini obuke na vozilu se
+            prilagođavaju individalno svakom kandidatu.
+          </p>
+          <p *ngIf="more_less" class="instruction-description">
+            Broj časova obuke upravljanja motornim vozilom zavisi od kategorije
+            koju polažete. Nakon uspješno završene obuke na vozilu kandidat
+            izlazi na polaganje praktičnog dijela obuke iz poznavanja
+            upravljanja vozilom. Polaganje se vrši pred komisijom koju
+            organizuje Ministarstvo obrazovanja.
+          </p>
+          <p class="read-more-less" (click)="readMoreLess()">
+            {{ more_less_label }}
           </p>
         </div>
       </div>
@@ -146,36 +223,44 @@
           <div class="review-image">
             <img src="../../../assets/review1.jpg" alt="" />
           </div>
-          <p class="review-name">Someone Name</p>
+          <p class="review-name">Mersad Graho</p>
           <p class="review-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elite. Lorem
-            ipsum dolor sit amet consectetur adipisicing elite. Lorem ipsum
-            dolor sit amet consectetur adipisicing.
-          </p>
-        </div>
-        <!-- CARD 2 -->
-        <div class="review-card">
-          <div class="review-image">
-            <!--<img src="images/img2.jpg" alt="" />-->
-          </div>
-          <p class="review-name">Someone Name</p>
-          <p class="review-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elite. Lorem
-            ipsum dolor sit amet consectetur adipisicing elite. Lorem ipsum
-            dolor sit amet consectetur adipisicing elite.Lorem ipsum dolor sit
-            amet consectetur adipisicing elite. Lorem ipsum dolor sit amet
-            consectetur adipisicing elite.
+            Veliko hvala autoškoli "A&S" koja nam je omogućila sve potrebne
+            uvjete za sitcanje znanja koje ćemo svakako nastaviti da
+            primjenjujemo dalje u praktičnim uvjetima. Uz najbolju predavačicu
+            Sanidu Prevljak smo i na šaljive načine uspjeli naučiti mnogo toga,
+            te sam uz njen trud, rad i zalaganje koji je uložila da nam na što
+            bolji način prenese svoje stečeno znanje uspješno položio teoretski
+            ispit.
           </p>
         </div>
         <!-- CARD 3 -->
         <div class="review-card">
           <div class="review-image">
-            <!--<img src="images/img2.jpg" alt="" />-->
+            <img src="../../../assets/review3.jpg" alt="" />
           </div>
-          <p class="review-name">Someone Name</p>
+          <p class="review-name">Adnana Landžo</p>
           <p class="review-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elite. Lorem
-            ipsum dolor sit amet consectetur adipisicing elite.
+            Najpristupačniji put do vozačkog ispita! Uz pomoć naše divne Sanide
+            i njene posvećenosti svom radu i nesebičnog pružanja znanja sve
+            nedoumice i prepreke za savladavanje teoretskog dijela vozačkog
+            ispita padaju u vodu. Sve pohvale i sve preporuke od srca.
+          </p>
+        </div>
+        <!-- CARD 2 -->
+        <div class="review-card">
+          <div class="review-image">
+            <img src="../../../assets/review2.jpg" alt="" />
+          </div>
+          <p class="review-name">Larisa Halilović</p>
+          <p class="review-text">
+            Prije svega Sanida je dobar čovjek, a zatim i najbolji predavač.
+            Svoje znanje na nas prenosi sa velikom profesionalnošću. Trudi se da
+            se maksimalno posveti svakom kandidatu i da što jednostavnije
+            pojasni. Sve preporuke za Sanidu i autoškolu "A&S" jer sigurno
+            nećete pogriješiti u odabiru. Svojim radom i pozitivnošću uspije da
+            sa svakim kandidatom uspostavi super komunikaciju, rad, red i
+            disciplinu.
           </p>
         </div>
       </div>
@@ -215,7 +300,9 @@
                 aria-expanded="true"
                 aria-controls="collapseOne"
               >
-                Tekst prvog pitanja?<span class="lni-chevron-up"></span>
+                Kada i gdje se mogu upisati u autoškolu "A&S"?<span
+                  class="lni-chevron-up"
+                ></span>
               </h6>
             </div>
             <div
@@ -226,15 +313,21 @@
             >
               <div class="card-body">
                 <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Molestias earum at esse alias deserunt fuga! Eaque corrupti
-                  impedit ad, ex magni blanditiis doloribus tempora incidunt
-                  facilis aut, perferendis est sequi.
+                  Upis novi kandidata je svaki radni dan u terminima od 8h do
+                  18h. Prijava za novu grupu kandidata teoretske nastave se
+                  šalje svake sedmice.
                 </p>
                 <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Dolorum tenetur reiciendis dicta incidunt odit quis provident
-                  vero labore.
+                  Šta za Vas to znači? Da svaki dan ima termin za kandidate koji
+                  su već prijavljeni na teoretsku nastavu u tekućoj sedmici i Vi
+                  na tom času ne možete prisustovati.
+                </p>
+                <p>
+                  Međutim, isti dan u drugom terminu koji Vama odgovara je
+                  vrijeme nastave za nove kandidate, kandidate koji još nemaju
+                  18 godina (3mjeseca prije punoljetstva) , kandidate koji su
+                  odgodili izlazak na polaganje pa izlaze na iduće i rijetke
+                  kandidate ponovce.
                 </p>
               </div>
             </div>
@@ -256,7 +349,7 @@
                 aria-expanded="true"
                 aria-controls="collapseTwo"
               >
-                Tekst drugog pitanja sa dužim tekstom?<span
+                Koje dokumente moram imati da bi se prijavio u autoškolu?<span
                   class="lni-chevron-up"
                 ></span>
               </h6>
@@ -269,15 +362,12 @@
             >
               <div class="card-body">
                 <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Nihil repellat tempora magnam assumenda omnis hic dicta nulla
-                  perferendis fuga neque, sit laborum quasi accusamus non
-                  voluptates numquam totam itaque veritatis! Assumenda omnis hic
-                  dicta nulla perferendis fuga neque, sit laborum quasi
-                  accusamus non voluptates numquam totam itaque veritatis!
-                </p>
-                <p>
-                  Nihil repellat tempora magnam assumenda omnis hic dicta nulla.
+                  Za upis u autoškolu potrebno je imati ličnu kartu i ljekarsko
+                  uvjerenje. Kandidati mlađi od 18g (3mjeseca do punoljestva)
+                  mogu prisustovati teoretskoj nastavi bez lične karte. Ako
+                  imate vozačku dozvolu B kategorije i želite polagati za
+                  C1,C,CE,D1,D trebate imati važeću vozačku dozvolu za navedenu
+                  kategoriju.
                 </p>
               </div>
             </div>
@@ -299,8 +389,7 @@
                 aria-expanded="true"
                 aria-controls="collapseThree"
               >
-                Tekst treceg________treceg pitanja sa dužim tekstom koji prelazi
-                i u drgi red?<span class="lni-chevron-up"></span>
+                Kako se može platiti obuka?<span class="lni-chevron-up"></span>
               </h6>
             </div>
             <div
@@ -311,15 +400,18 @@
             >
               <div class="card-body">
                 <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit
-                  quidem et quam distinctio voluptas neque asperiores eligendi.
-                  Maxime quam doloremque voluptates eveniet deserunt? Sed illo
-                  quasi exercitationem repellat! Iste, eum?
+                  Nema više razloga da odgađate polaganje vozačkog ispita, niti
+                  izgovora
                 </p>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
-                  eos veniam. Id laborum alias totam natus vero sapiente odio.
+                  Od proceduralnog do finansijskog dijela, učinili smo vozački
+                  ispit najpristupačnijim ikad !
                 </p>
+                <p>
+                  💸 Plaćanje na rate kompletne obuke na način na koji sami sebi
+                  odredite ratu.
+                </p>
+                <p>💰 GOTOVINSKO PLAĆANJE - POPUST !</p>
               </div>
             </div>
           </div>
@@ -340,7 +432,9 @@
                 aria-expanded="true"
                 aria-controls="collapseFour"
               >
-                Tekst cetvrtog pitanja?<span class="lni-chevron-up"></span>
+                Koliko važi ljekarsko uvjerenje?<span
+                  class="lni-chevron-up"
+                ></span>
               </h6>
             </div>
             <div
@@ -351,14 +445,8 @@
             >
               <div class="card-body">
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Minima ea et, similique, impedit hic architecto corporis
-                  dolorem sed id dolor tenetur veniam rem fuga consectetur
-                  laboriosam ipsam tempore iure ducimus!
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
-                  repellendus odit, sed repellat voluptatem expedita.
+                  Ljekarsko uvjerenje važi godinu dana od datuma vađenja
+                  ljekarskog uvjerenja.
                 </p>
               </div>
             </div>
@@ -380,7 +468,8 @@
                 aria-expanded="true"
                 aria-controls="collapseFive"
               >
-                Tekst petog pitanja?<span class="lni-chevron-up"></span>
+                Da li nudite kondicisku vožnju za vozače koji su položili a nisu
+                dugo vozili?<span class="lni-chevron-up"></span>
               </h6>
             </div>
             <div
@@ -391,15 +480,27 @@
             >
               <div class="card-body">
                 <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Suscipit minima cum reiciendis ratione in? Deleniti nobis,
-                  ullam repellendus at placeat reiciendis magni dolorum quam
-                  cumque non iusto eius velit? Atque?
+                  Veoma često se dogodi da položite vozački ispit i da nakon
+                  toga rijetko ili nikada ne vozite. Posljedica toga je da više
+                  niste sigurni u svoje vozačke sposobnosti i u poznavanje
+                  saobraćajnih propisa i sigurnosnih pravila. Nemojte se
+                  zabrinjavati ako niste vozili duži vremenski period, jer to je
+                  vještina koja se nikad ne zaboravlja. Možemo je usporediti sa
+                  vožnjom bicikla, naučili ste ga voziti, niste ga vozili par
+                  godina i sigurno bi ga vozili bez problema. Ipak većini vozača
+                  koji nisu dugo vozili potrebno je nekoliko sati privikavanja
+                  na tehniku vožnje i na vožnju u složenim saobraćajnim
+                  uslovima, jer automobil može biti opasno prevozno sredstvo za
+                  drugog sudionika u prometu ali i za vas. Steći ćete sigurnost
+                  u upravljanju motornim vozilom i ponoviti prometne propise i
+                  sigurnosna pravila.
                 </p>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Soluta asperiores illum architecto debitis mollitia cum modi
-                  sunt voluptas.
+                  Naš program je individualni i potpuno se prilagođava Vašim
+                  potrebama. Vrši se analiza Vaših pogrešaka kod upravljanja
+                  vozilom te se obuka usmjerava ciljano ka poboljšanju koje
+                  dovodi do sigurnog upravljanja vozilom koje je i Vaš i naš
+                  cilj.
                 </p>
               </div>
             </div>
@@ -412,8 +513,14 @@
   <!-- LOCATION SECTION -->
   <div class="location-map-section">
     <div class="section-title">
-      <p>Naše prostorije su na adresi M. Tita br. 21 (Partizanovo)</p>
+      <p>Naše prostorije su na adresi M. Tita br. bb (SC Partizanovo)</p>
+      <p class="section-subtitle">Klikni na sliku za tačnu lokaciju</p>
     </div>
-    <div class="location-map-img"></div>
+    <a
+      target="_blank"
+      href="https://www.google.com/maps/place/Auto%C5%A1kola+%22A%26S%22/@43.6528757,17.9623856,17z/data=!3m1!4b1!4m6!3m5!1s0x475f516d0cda4cbf:0x9488441eac270378!8m2!3d43.6528757!4d17.9623856!16s%2Fg%2F11vdh8whh4?entry=ttu"
+    >
+      <div class="location-map-img"></div>
+    </a>
   </div>
 </div>

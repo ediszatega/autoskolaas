@@ -29,6 +29,10 @@
   justify-self: start;
   order: 1;
 }
+
+.txt-important {
+  font-weight: bold;
+}
 .image1 {
   justify-self: end;
   order: 2;
@@ -69,7 +73,7 @@
 
   .text {
     text-align: center;
-    padding: 0 50px;
+    padding: 0 20px;
   }
   .text1 {
     justify-self: auto;
