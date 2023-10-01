@@ -81,136 +81,38 @@
       </div>
     </div>
   </div>
-
   <!-- PHASES SECTION -->
   <div class="phases-section">
     <div class="section-title">
       <p>Šta je sve potrebno da biste dobili vozačku dozvolu?</p>
     </div>
     <div class="phases">
-      <div class="phase">
+      <div *ngFor="let phase of phases" class="phase">
         <div class="number">
-          <p>1.</p>
+          <p>{{ phase.number }}.</p>
         </div>
         <div class="instruction">
-          <p class="instruction-title">Ljekarsko uvjerenje</p>
+          <p class="instruction-title">{{ phase.instructionTitle }}</p>
           <p class="instruction-description">
-            Zdravstvene preglede kandidata za vozača i vozača motornog vozila
-            obavljaju zdravstvene ustanove koje su za to ovlaštene u skladu sa
-            zakonima. U Konjicu je to Dom Zdravlja. U slučaju nekih nejasnoća do
-            ljekarskog uvjerenja ćete doći najbrže i najlakše u dogovoru sa
-            osobljem autoškole "A&S".
+            {{ phase.instructionDescription }}
           </p>
-          <p *ngIf="more_less" class="instruction-description">
-            Ukoliko je potrebno, naše osoblje će Vas odvesti do zdravstvene
-            ustanove, biti sa Vama i vratiti Vas ponovo tamo gdje Vama odgovara.
-            Ljekarsko uvjerenje sadrži 4 pregleda: oftamolog, neuropsihijatar,
-            psiholog, medicina rada (pregled i zaključak)
+          <p
+            *ngIf="phase.moreLess && phase.additionalInstructionDescription"
+            class="instruction-description"
+          >
+            {{ phase.additionalInstructionDescription }}
           </p>
-          <p class="read-more-less" (click)="readMoreLess()">
-            {{ more_less_label }}
-          </p>
-        </div>
-      </div>
-      <div class="phase">
-        <div class="number">
-          <p>2.</p>
-        </div>
-        <div class="instruction">
-          <p class="instruction-title">
-            Teoretska obuka u kabinetu autoškole "A&S"
-          </p>
-          <p class="instruction-description">
-            U autoškoli "A&S" teoretsku nastavu možete pohađati svakog radnog
-            dana u prijepodnevnim i popodnevnim terminima po izboru. Broj časova
-            zavisi od kategorije za koji kandidat polaže. U toku jednog dana
-            kandidat može imati najviše četri časa. Teoretska nastava se održava
-            u prostorijama autoškole "A&S" uz korištenje adekvatne opreme i
-            literature.
-          </p>
-          <p *ngIf="more_less" class="instruction-description">
-            Kabinet se nalazi u ulici Maršala Tita bb (SC Partizanovo).
-            Predavanja održava licencirani predavač teoretske nastave MA.Sanida
-            Prevljak diplomirani inžinjer saobraćaja i komunikacija. Na časovima
-            teoretske nastave savladaćete kompletno gradivo i biti spremni za
-            uspješno polaganje testova iz prvog pokušaja.
-          </p>
-          <p class="read-more-less" (click)="readMoreLess()">
-            {{ more_less_label }}
-          </p>
-        </div>
-      </div>
-      <div class="phase">
-        <div class="number">
-          <p>3.</p>
-        </div>
-        <div class="instruction">
-          <p class="instruction-title">
-            Predavanje iz Osnova pružanja prve pomoći
-          </p>
-          <p class="instruction-description">
-            Predavanje iz Osnova pružanja prve pomoći održava se u prostorijama
-            Crvenog križa općine Konjic, Kolonija bb.
-          </p>
-        </div>
-      </div>
-      <div class="phase">
-        <div class="number">
-          <p>4.</p>
-        </div>
-        <div class="instruction">
-          <p class="instruction-title">
-            Polaganje Ispita poznavanja propisa o sigurnosti saobraćaja na
-            putevima (testovi) i polaganje Ispita iz osnova pružanja prve pomoći
-          </p>
-          <p class="instruction-description">
-            Polaganje teoretskog djela vozačkog ispita se obavlja nakon završene
-            edukacije o poznavanju saobraćajnih propisa. Polaganje prve pomoći
-            se obavlja nakon završene edukacije iz osnova prve pomoći. Polaganje
-            testova i prve pomoći se vrši pred komisijom koju organizuje
-            Ministarstvo obrazovanja HNK.
-          </p>
-          <p *ngIf="more_less" class="instruction-description">
-            Naš predavač će za vas izvršiti kompletan proces prijave za
-            polaganje, te vas obavjestiti o terminu polaganja. Polaganje
-            teoretskog djela vozačkog ispita i prve pomoći u Konjicu održava se
-            u prostorijama JU "Srednja škola Konjic", dva puta mjesečno.
-          </p>
-          <p class="read-more-less" (click)="readMoreLess()">
-            {{ more_less_label }}
-          </p>
-        </div>
-      </div>
-      <div class="phase">
-        <div class="number">
-          <p>5.</p>
-        </div>
-        <div class="instruction">
-          <p class="instruction-title">
-            Obuka upravljanja motornim vozilom (praktični dio) i polaganje
-            ispita iz upravljanja motornim vozilom
-          </p>
-          <p class="instruction-description">
-            Nakon položenog ispita teoretskog djela i prve pomoći kandidat može
-            početi sa procesom obuke upravljanja motornim vozilom u dogovoru sa
-            instruktorom. Način, raspored i termini obuke na vozilu se
-            prilagođavaju individalno svakom kandidatu.
-          </p>
-          <p *ngIf="more_less" class="instruction-description">
-            Broj časova obuke upravljanja motornim vozilom zavisi od kategorije
-            koju polažete. Nakon uspješno završene obuke na vozilu kandidat
-            izlazi na polaganje praktičnog dijela obuke iz poznavanja
-            upravljanja vozilom. Polaganje se vrši pred komisijom koju
-            organizuje Ministarstvo obrazovanja.
-          </p>
-          <p class="read-more-less" (click)="readMoreLess()">
-            {{ more_less_label }}
+          <p
+            *ngIf="phase.additionalInstructionDescription"
+            class="read-more-less"
+            (click)="readMoreLess(phase.number)"
+          >
+            {{ phase.number === openPhase ? "Prikaži manje" : "Prikaži više" }}
           </p>
         </div>
       </div>
     </div>
   </div>
-
   <!-- REVIEWS SECTION -->
   <div class="reviews-section">
     <div class="reviews-wrapper">
@@ -219,49 +121,12 @@
       </div>
       <div class="review-cards">
         <!-- CARD 1 -->
-        <div class="review-card">
+        <div *ngFor="let review of reviews" class="review-card">
           <div class="review-image">
-            <img src="../../../assets/review1.jpg" alt="" />
+            <img [src]="review.img" alt="" />
           </div>
-          <p class="review-name">Mersad Graho</p>
-          <p class="review-text">
-            Veliko hvala autoškoli "A&S" koja nam je omogućila sve potrebne
-            uvjete za sitcanje znanja koje ćemo svakako nastaviti da
-            primjenjujemo dalje u praktičnim uvjetima. Uz najbolju predavačicu
-            Sanidu Prevljak smo i na šaljive načine uspjeli naučiti mnogo toga,
-            te sam uz njen trud, rad i zalaganje koji je uložila da nam na što
-            bolji način prenese svoje stečeno znanje uspješno položio teoretski
-            ispit.
-          </p>
-        </div>
-        <!-- CARD 3 -->
-        <div class="review-card">
-          <div class="review-image">
-            <img src="../../../assets/review3.jpg" alt="" />
-          </div>
-          <p class="review-name">Adnana Landžo</p>
-          <p class="review-text">
-            Najpristupačniji put do vozačkog ispita! Uz pomoć naše divne Sanide
-            i njene posvećenosti svom radu i nesebičnog pružanja znanja sve
-            nedoumice i prepreke za savladavanje teoretskog dijela vozačkog
-            ispita padaju u vodu. Sve pohvale i sve preporuke od srca.
-          </p>
-        </div>
-        <!-- CARD 2 -->
-        <div class="review-card">
-          <div class="review-image">
-            <img src="../../../assets/review2.jpg" alt="" />
-          </div>
-          <p class="review-name">Larisa Halilović</p>
-          <p class="review-text">
-            Prije svega Sanida je dobar čovjek, a zatim i najbolji predavač.
-            Svoje znanje na nas prenosi sa velikom profesionalnošću. Trudi se da
-            se maksimalno posveti svakom kandidatu i da što jednostavnije
-            pojasni. Sve preporuke za Sanidu i autoškolu "A&S" jer sigurno
-            nećete pogriješiti u odabiru. Svojim radom i pozitivnošću uspije da
-            sa svakim kandidatom uspostavi super komunikaciju, rad, red i
-            disciplinu.
-          </p>
+          <p class="review-name">{{ review.name }}</p>
+          <p class="review-text">{{ review.text }}</p>
         </div>
       </div>
     </div>

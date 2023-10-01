@@ -65,7 +65,7 @@
 }
 
 .news-title {
-  font-size: 2rem;
+  font-size: 1.7rem;
   margin-top: 15px;
   cursor: pointer;
   color: var(--text-dark);
@@ -84,6 +84,8 @@
   -webkit-box-orient: vertical;
   text-align: left;
   color: #707070;
+  padding-right: 0.8rem;
+  font-size: 0.9rem;
 }
 
 .date-author {

@@ -1,9 +1,26 @@
-.test-selection {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 8rem;
+}
+
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 50vh;
+  width: 75%;
+  max-width: 1200px;
 }
 
 .label-wrapper {
@@ -51,4 +68,10 @@ button {
 
 button:hover {
   background-color: var(--main-color);
+}
+
+@media (max-width: 1000px) {
+  .page-wrapper {
+    margin-bottom: 6rem;
+  }
 }

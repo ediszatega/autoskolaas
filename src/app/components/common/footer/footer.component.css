@@ -46,6 +46,7 @@ footer .social-icons li a:hover,
 p {
   font-size: 0.8rem;
   opacity: 0.75;
+  text-align: center;
 }
 
 footer .wave {
