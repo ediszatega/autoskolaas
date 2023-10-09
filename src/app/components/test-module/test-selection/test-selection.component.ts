@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./test-selection.component.css'],
 })
 export class TestSelectionComponent {
-  selectedCategory: string = 'KATEGORIJA B';
+  selectedCategory: string = 'Kategorija B';
   selectedTest: string = 'Test 1';
 
   categories: string[] = [
@@ -48,7 +48,12 @@ export class TestSelectionComponent {
   constructor(private router: Router) {}
 
   onContinue() {
-    const testNumber = this.selectedTest.replace(/\D/g, '');
+    let testNumber = '1';
+    if (this.selectedCategory == 'Kategorija B')
+      testNumber = this.selectedTest.replace(/\D/g, '');
+    else if (this.selectedCategory == 'Kategorija A') testNumber = '20';
+    else if (this.selectedCategory == 'Kategorija C') testNumber = '21';
+    else testNumber = '22';
     this.router.navigate(['/testovi', testNumber]);
   }
 }

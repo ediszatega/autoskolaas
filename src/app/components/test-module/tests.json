@@ -8959,5 +8959,1085 @@
         "image": "https://i.ibb.co/FXnwWFT/test19-40.png"
       }
     ]
+  },
+  {
+    "test": 20,
+    "questions": [
+      {
+        "question": "Da li vozač motocikla mora nositi zakopčanu zaštitnu kacigu za vrijeme vožnje? ",
+        "answers": [
+          {
+            "text": "ne, dužan je nositi samo zaštitne naočale;"
+          },
+          {
+            "text": "da;"
+          },
+          {
+            "text": "ne."
+          }
+        ],
+        "answer": [2],
+        "points": 2
+      },
+      {
+        "question": "Koliko važi registracija mopeda? ",
+        "answers": [
+          {
+            "text": "nije vremenski ograničena;"
+          },
+          {
+            "text": "jednu godinu; "
+          },
+          {
+            "text": "dvije godine."
+          }
+        ],
+        "answer": [1],
+        "points": 2
+      },
+      {
+        "question": "Kratko svjetlo na biciklu ili mopedu mora biti izvedeno i podešeno tako da osvijetljeni dio ravnog puta: ",
+        "answers": [
+          {
+            "text": "nije duži od 35 m ni kraći od 10 m; "
+          },
+          {
+            "text": "nije duži od 50 m ni kraći od 10 m."
+          }
+        ],
+        "answer": [2],
+        "points": 2
+      },
+      {
+        "question": "Kolika je najveća dozvoljena širina prikolice koju vuku motocikli, mopedi i drugi dvotočkaši?",
+        "answers": [
+          {
+            "text": "1,00 m; "
+          },
+          {
+            "text": "0,80 m"
+          }
+        ],
+        "answer": [1],
+        "points": 2
+      },
+      {
+        "question": "Da li je vozač motocikla dužan pravilno koristiti zaštitnu kacigu za vrijeme vožnje motociklom? ",
+        "answers": [
+          {
+            "text": "ne;"
+          },
+          {
+            "text": "da."
+          }
+        ],
+        "answer": [2],
+        "points": 2
+      },
+      {
+        "question": "Da li kandidat za instruktora vožnje A kategorije može polagati praktični dio ispita na motociklu zapremine motora do 125 ccm i snage motora do 11 kW? ",
+        "answers": [
+          {
+            "text": "da;"
+          },
+          {
+            "text": "ne."
+          }
+        ],
+        "answer": [2],
+        "points": 2
+      },
+      {
+        "question": "Tricikl je: ",
+        "answers": [
+          {
+            "text": "je motorno vozilo na tri točka simetrično postavljena u odnosu na srednju uzdužnu osu, s toplotnim motorom čija je radna zapremina veća od 50 cm³ ili čija je konstrukcijski najveća brzina veća od 45 km/h; "
+          },
+          {
+            "text": "je motorno vozilo na tri točka simetrično postavljena u odnosu na srednju uzdužnu osu, s toplotnim motorom čija radna zapremina nije veća od 50 cm³ ili čija konstrukcijski najveća brzina nije veća od 45 km/h."
+          }
+        ],
+        "answer": [1],
+        "points": 2
+      },
+      {
+        "question": "Ako se dva ili više vozača bicikala ili mopeda kreću u grupi: ",
+        "answers": [
+          {
+            "text": "dužni su da se kreću jedan za drugim; "
+          },
+          {
+            "text": "nisu dužni da se kreću jedan za drugim. "
+          }
+        ],
+        "answer": [1],
+        "points": 2
+      },
+      {
+        "question": "Ako na putu postoji posebno uređena biciklistička staza, vozač mopeda ako je pokretan snagom vozača: ",
+        "answers": [
+          {
+            "text": "nije dužan da se kreće desnom biciklističkom stazom u odnosu na smjer kretanja saobraćaja. "
+          },
+          {
+            "text": "mora da se kreće desnom biciklističkom stazom u odnosu na smjer kretanja saobraćaja. "
+          }
+        ],
+        "answer": [2],
+        "points": 2
+      },
+      {
+        "question": "Na biciklističkim stazama uređenim i obilježenim za saobraćaj bicikla i mopeda u oba smjera: ",
+        "answers": [
+          {
+            "text": "vozila moraju da se kreću desnom stranom u smjeru kretanja vozila; "
+          },
+          {
+            "text": "vozila ne moraju da se kreću desnom stranom u smjeru kretanja vozila. "
+          }
+        ],
+        "answer": [1],
+        "points": 2
+      },
+      {
+        "question": "Vozač bicikla, mopeda, lakog motocikla i motocikla mora da upravlja vozilom na način kojim se ne umanjuje stabilnost vozila i ne ometaju drugi učesnici u saobraćaju, a naročito ne smije da: (više tačnih odgovora) ",
+        "answers": [
+          {
+            "text": "ispušta upravljač iz ruku, osim kad najavljuje promjenu smjera kretanja; "
+          },
+          {
+            "text": "se kreće što bliže desnoj ivici kolovoza; "
+          },
+          {
+            "text": "sklanja noge sa pedala; "
+          },
+          {
+            "text": "kreće po onim saobraćajnim površinama po kojima je kretanje takvim vozilima dozvoljeno; "
+          },
+          {
+            "text": "upotrebljava na oba uha slušalice za audio-uređaje. "
+          }
+        ],
+        "answer": [1, 2, 5],
+        "points": 2
+      }
+    ]
+  },
+  {
+    "test": 21,
+    "questions": [
+      {
+        "question": "Kolika su najveća dozvoljena osovinska opterećenja za pojedinačne osovine (pogonske)? ",
+        "answers": [
+          { "text": "10 t; " },
+          { "text": "11,5 t; " },
+          { "text": "11 t; " }
+        ],
+        "answer": [2],
+        "points": 2
+      },
+      {
+        "question": "Na kojem nagibu parkirna kočnica motornog odnosno priključnog vozila kada je ono odvojeno od vučnog vozila, mora obezbijediti nepokretnost vozila opterećenog do najveće dopuštene mase, a da pritom vozilo nije kočeno na drugi način? ",
+        "answers": [{ "text": "12% " }, { "text": "18% " }],
+        "answer": [2],
+        "points": 2
+      },
+      {
+        "question": "Na kojem nagibu parkirna kočnica skupa vozila mora obezbijediti nepokretnost cijelog skupa vozila, a da pritom skup vozila ne bude kočen na drugi način? ",
+        "answers": [{ "text": "6%" }, { "text": "12%" }],
+        "answer": [2],
+        "points": 2
+      },
+      {
+        "question": " Opasne materije mogu da prevoze samo lica koja su, pored drugih zakonom propisanih uslova: (više tačnih odgovora)",
+        "answers": [
+          { "text": "navršila 21 godinu života; " },
+          { "text": "navršila 23 godine života, " },
+          {
+            "text": "stručno osposobljena za rukovanje i prevoz opasnih materija. "
+          }
+        ],
+        "answer": [1, 2],
+        "points": 2
+      },
+      {
+        "question": "U kategoriju C ubrajaju se motorna vozila za prevoz tereta čija je najveća dozvoljena masa: ",
+        "answers": [
+          { "text": "veća od 3.500 kg; " },
+          { "text": "veća od 7.500 kg. " }
+        ],
+        "answer": [2],
+        "points": 2
+      },
+      {
+        "question": "U podkategoriju C1 ubrajaju se motorna vozila za prevoz tereta čija je najveća dozvoljena masa: ",
+        "answers": [
+          { "text": "veća od 3.500 kg, a manja od 7.500 kg; " },
+          { "text": "veća od 7.500 kg, a manja od 12.000 kg. " }
+        ],
+        "answer": [1],
+        "points": 2
+      },
+      {
+        "question": "Javni prevoz u drumskom saobraćaju: ",
+        "answers": [
+          { "text": "može se vršiti samo motornim vozilima; " },
+          { "text": "može se vršiti motornim i zaprežnim vozilima. " }
+        ],
+        "answer": [1],
+        "points": 2
+      },
+      {
+        "question": "Vozač koji upravlja autobusom ili teretnim motornim vozilom ili skupom vozila čija je najveća dozvoljena masa veća od 3.500 kg ne smije neprekidno upravljati vozilom duže od 4,5 h, nakon čega mora da koristi odmor u trajanju od: ",
+        "answers": [
+          { "text": "30 min; " },
+          { "text": "45 min; " },
+          { "text": "1 h; " },
+          { "text": "2 h" }
+        ],
+        "answer": [2],
+        "points": 2
+      },
+      {
+        "question": "Da li stop-svjetla mogu zasvijetliti u slučaju kada vozač koristi retarder? ",
+        "answers": [{ "text": "ne mogu; " }, { "text": "mogu. " }],
+        "answer": [2],
+        "points": 2
+      },
+      {
+        "question": "Kandidat za vozača CE kategorije može polagati ispit iz upravljanja motornim vozilom ako prikolica ima nosivost od: ",
+        "answers": [
+          { "text": "minimalno 1.000 kg; " },
+          { "text": "minimalno 2.500 kg; " }
+        ],
+        "answer": [2],
+        "points": 2
+      },
+      {
+        "question": "Koliko je vrijeme trajanja ispita iz upravljanja motornim vozilom za podkategoriju C1? ",
+        "answers": [
+          { "text": "najmanje 25 min; " },
+          { "text": "najmanje 35 min. " }
+        ],
+        "answer": [2],
+        "points": 2
+      },
+      {
+        "question": "Najveća dozvoljena masa skupa vozila C1E podkategorije ne smije preći: ",
+        "answers": [{ "text": "10.500 kg; " }, { "text": "12.000 kg. " }],
+        "answer": [2],
+        "points": 2
+      },
+      {
+        "question": "Kada teretno motorno vozilo (osim tegljača namijenjenih za vuču poluprikolica) mora biti obilježeno oznakom za teško motorno vozilo? ",
+        "answers": [
+          { "text": "ako najveća dopuštena masa prelazi 12.000 kg; " },
+          { "text": "ako najveća dopuštena masa prelazi 7.500 kg; " },
+          { "text": "ako najveća dopuštena masa prelazi 3.500 kg. " }
+        ],
+        "answer": [1],
+        "points": 2
+      },
+      {
+        "question": "Kada priključna vozila moraju biti obilježena oznakama za duga priključna vozila? (više tačnih odgovora) ",
+        "answers": [
+          {
+            "text": "kad dužina, uključujući i rudu, prelazi 8 m, a najveća dopuštena masa manja je ili jednaka 10.000 kg; "
+          },
+          {
+            "text": "kad najveća dopuštena masa, bez obzira na dužinu priključnog vozila, prelazi 10.000 kg; "
+          },
+          {
+            "text": "sva priključna vozila moraju nositi oznaku za duga vozila. "
+          }
+        ],
+        "answer": [1, 2],
+        "points": 2
+      },
+      {
+        "question": "Klinasti podmetači obavezni su za sva motorna i priključna vozila čija najveća dopuštena masa prelazi: ",
+        "answers": [{ "text": "5 t; " }, { "text": "7,5 t. " }],
+        "answer": [1],
+        "points": 2
+      },
+      {
+        "question": "U podkategoriju C1 ubrajaju se motorna vozila za prevoz tereta čija najveća dozvoljena masa ne prelazi: ",
+        "answers": [
+          { "text": "3 500 kg; " },
+          { "text": "5 000 kg; " },
+          { "text": "7 000 kg; " },
+          { "text": "7 500 kg. " }
+        ],
+        "answer": [4],
+        "points": 2
+      },
+      {
+        "question": "Da li za vrijeme upravljanja vozilom kategorija C i D vozač smije da ima alkohola u krvi? ",
+        "answers": [
+          { "text": "da, do 0,5 g/kg; " },
+          { "text": "ne;" },
+          { "text": "da, do 0,3 g/kg. " }
+        ],
+        "answer": [2],
+        "points": 2
+      },
+      {
+        "question": "Potvrda o aktivnostima vozača: ",
+        "answers": [
+          {
+            "text": "obrazac o evidenciji i razlozima ne korišćenja slobodnog vremena i odsustva vozača;"
+          },
+          {
+            "text": "potvrda koju izdaje prijevoznik vozaču za period dok vozač nije upravljao vozilom (bolovanje, godišnji odmor, ostali izostanci i dr.). "
+          }
+        ],
+        "answer": [2],
+        "points": 2
+      },
+      {
+        "question": "Tahograf je uređaj u vozilu koji bilježi: (više tačnih odgovora) ",
+        "answers": [
+          { "text": "silu kočenja vozila;" },
+          { "text": "brzinu, vrijeme i pređeni put vozila; " },
+          { "text": "vremena rada i odmora vozača. " }
+        ],
+        "answer": [2, 3],
+        "points": 2
+      },
+      {
+        "question": "Redovni dnevni odmor je: ",
+        "answers": [
+          { "text": "neprekinuti period odmora od najmanje 11 sati; " },
+          {
+            "text": "neprekidni period od najmanje tri sata i drugi neprekidni period od najmanje devet sati; "
+          },
+          {
+            "text": "neprekinuti period odmora od najmanje devet sati, ali manje od 11 sati. "
+          }
+        ],
+        "answer": [1],
+        "points": 2
+      },
+      {
+        "question": "Teret na vozilu treba da bude raspoređen i prema potrebi, pričvršćen i pokriven tako da: (više tačnih odgovora) ",
+        "answers": [
+          { "text": "ne ugrožava bezbjednost učesnika u saobraćaju; " },
+          { "text": "ne umanjuje vozaču preglednost puta; " },
+          { "text": "ne rasipa se po putu, osim sa desne strane; " },
+          { "text": "ne otežava upravljanje vozilom." }
+        ],
+        "answer": [1, 2],
+        "points": 2
+      },
+      {
+        "question": "Kad se na javnom putu van naselja koji ima jednu saobraćajnu traku namijenjenu za saobraćaj vozila u jednom smijeru, kreću jedno za drugim motorna vozila čija je najveća dozvoljena masa veća od 3.500 kg ili čija je dužina veća od sedam metara vozači su dužni da između svakog od tih vozila drže odstojanje od: ",
+        "answers": [
+          {
+            "text": "najmanje 100 m i to na dijelu puta gdje je dozvoljeno preticanje ; "
+          },
+          {
+            "text": "najmanje 500 m i to na dijelu puta gdje je dozvoljeno preticanje; "
+          },
+          {
+            "text": "najmanje 200 m, i to na dijelu puta gdje je dozvoljeno preticanje. "
+          }
+        ],
+        "answer": [1],
+        "points": 2
+      },
+      {
+        "question": "Na tovarnom sanduku teretnog motornog vozila dugom 9 m prevoze se željezničke šine koje se kontinuirano oslanjaju na pod tovarnog sanduka. Teret je pravilno utovaren ako: (više tačnih odgovora) ",
+        "answers": [
+          {
+            "text": "najudaljeniju tačku na zadnjoj strani vozila prelazi za manje od 2 m; "
+          },
+          {
+            "text": "najudaljeniju tačku na zadnjoj strani vozila prelazi za manje od 1,5 m; "
+          },
+          {
+            "text": "je najisturenija tačka tereta označena tablom kvadratnog obilka, dimenzija 50 x 50cm, obojena naizmjeničnim kosim trakama reflektujuće narandžaste i bijele boje i postavljena uspravno na uzdužnu osu vozila. "
+          }
+        ],
+        "answer": [2, 3],
+        "points": 2
+      },
+      {
+        "question": "Digitalni tahograf je: ",
+        "answers": [
+          {
+            "text": "uređaj u drumskom saobraćaju za bilježenje brzine i pređenog puta, kao i vremena rada i odmora, gdje se podaci zapisuju na tahografski listić na kojem vrh pisača ostvaruje zapis mehaničkim pritiskom na tahografski listić, a koji omogućava bilježenje podataka za jedan dan; "
+          },
+          {
+            "text": "uređaj u drumskom saobraćaju za bilježenje brzine i pređenog puta, kao i vremena rada i odmora, gdje se podaci zapisuju u radnu memoriju i memorijsku karticu, a koji omogućava pohranjivanje podataka za period od 365 dana. "
+          }
+        ],
+        "answer": [2],
+        "points": 2
+      },
+      {
+        "question": "Redovni sedmični odmor je: ",
+        "answers": [
+          { "text": "odmor koji neprekidno traje najmanje 45 sati; " },
+          { "text": "odmor koji neprekidno traje najmanje 48 sati." }
+        ],
+        "answer": [1],
+        "points": 2
+      },
+      {
+        "question": "Kad vozač upravlja vozilom koje je opremljeno analognim tahografom, na zahtjev ovlašćenog lica mora pokazati: ",
+        "answers": [
+          { "text": "samo tahografski listić za tekući dan; " },
+          { "text": "tahografski listić za tekući dan i prethodnih 28 dana; " },
+          { "text": "tahografski listić za tekući dan i prethodnih 21 dan. " }
+        ],
+        "answer": [2],
+        "points": 2
+      },
+      {
+        "question": "Tegljač je: ",
+        "answers": [
+          {
+            "text": "motorno vozilo namijenjeno i opremljeno za vuču poluprikolice;"
+          },
+          {
+            "text": "motorno vozilo namijenjeno i opremljeno za vuču lake prikolice. "
+          }
+        ],
+        "answer": [1],
+        "points": 2
+      },
+      {
+        "question": "Da li teret u rasutom stanju, kad se prevozi na javnom putu, mora da bude prekriven na odgovarajući način kako bi se spriječilo rasipanje tereta: ",
+        "answers": [{ "text": "da; " }, { "text": "ne. " }],
+        "answer": [1],
+        "points": 2
+      },
+      {
+        "question": "Ukupno akumulirano vrijeme vožnje tokom 14 dana uzastopno ne smije biti duže od: ",
+        "answers": [{ "text": "96 sati; " }, { "text": "90 sati. " }],
+        "answer": [2],
+        "points": 2
+      },
+      {
+        "question": "Sedmično vrijeme vožnje ne smije biti duže od? ",
+        "answers": [{ "text": "48 sati; " }, { "text": "56 sati. " }],
+        "answer": [2],
+        "points": 2
+      },
+      {
+        "question": "Zimsku opremu za vozila čija najveća dozvoljena masa prelazi 3.500 kg i autobuse čine? (više tačnih odgovora) ",
+        "answers": [
+          { "text": "zimski pneumatici na pogonskim točkovima; " },
+          { "text": "lanci za snijeg; " },
+          { "text": "lopata; " },
+          { "text": "vreća pijeska od 25 do 50 kg. " }
+        ],
+        "answer": [1, 2],
+        "points": 2
+      },
+      {
+        "question": "Znakom za označavanje sporih vozila moraju biti obilježena: ",
+        "answers": [
+          {
+            "text": "motorna vozila i priključna vozila koja se zbog konstrukcijskih razloga, na ravnom putu ne mogu kretati brzinom većom od 30 km/h; "
+          },
+          {
+            "text": "motorna vozila i priključna vozila koja se zbog konstrukcijskih razloga, na ravnom putu ne mogu kretati brzinom većom od 40 km/h; "
+          },
+          {
+            "text": "motorna vozila i priključna vozila koja se zbog konstrukcijskih razloga, na ravnom putu ne mogu kretati brzinom većom od 50 km/h. "
+          }
+        ],
+        "answer": [1],
+        "points": 2
+      },
+      {
+        "question": "Najmanja dopuštena dubina kanala na gaznoj površini pneumatika za autobuse i teretna vozila je: ",
+        "answers": [
+          { "text": "1 mm; " },
+          { "text": "2 mm; " },
+          { "text": "1.6 mm. " }
+        ],
+        "answer": [2],
+        "points": 2
+      },
+      {
+        "question": "Izdata vam je vozačka dozvola za C1E podkategoriju. Kojim vozilima imate pravo upravljati? ",
+        "answers": [
+          {
+            "text": "skupovima vozila čija se vučna vozila ubrajaju u podkategoriju C1, a priključna vozila imaju najveću dozvoljenu masu veću od 750 kg, s tim da najveća dozvoljena masa skupa vozila ne prelazi 12.000 kg i da najveća dozvoljena masa priključnog vozila ne prelazi masu neopterećenog vučnog vozila; "
+          },
+          {
+            "text": "skupovima vozila čija se vučna vozila ubrajaju u kategoriju C, a priključna vozila imaju najveću dozvoljenu masu veću od 750 kg; "
+          },
+          {
+            "text": "motornim vozilima za prevoz tereta čija je najveća dozvoljena masa veća od 7.500 kg. "
+          }
+        ],
+        "answer": [1],
+        "points": 2
+      },
+      {
+        "question": "Koja je najveća dozvoljena količina alkohola u krvi za vozače motornih vozila kategorije C, CE, D i DE i vozače podkategorije C1, C1E i D1 i D1E za vrijeme upravljanja vozilom te kategorije i podkategorije? ",
+        "answers": [
+          { "text": "0,0 g/kg; " },
+          { "text": "0,3 g/kg; " },
+          { "text": "0,5 g/kg. " }
+        ],
+        "answer": [1],
+        "points": 2
+      },
+      {
+        "question": "Која је najveća dozvoljena količina alkohola u krvi za vozače vozila kojim se obavlja javni prevoz-za vrijeme obavljanja javnog prevoza tim vozilom? ",
+        "answers": [
+          { "text": "0,0 g/kg; " },
+          { "text": "0,3 g/kg; " },
+          { "text": "0,5 g/kg. " }
+        ],
+        "answer": [1],
+        "points": 2
+      },
+      {
+        "question": "Koja je najveća dozvoljena brzina kretanja na putevima za autobuse i autobuse s lakom prikolicom, kao i za teretna motorna vozila čija je najveća dozvoljena masa veća od 3.500 kg a manja od 7.500 kg? ",
+        "answers": [
+          { "text": "60 km/h; " },
+          { "text": "70 km/h; " },
+          { "text": "80 km/h. " }
+        ],
+        "answer": [3],
+        "points": 2
+      },
+      {
+        "question": "Sedmično vrijeme vožnje je: ",
+        "answers": [
+          {
+            "text": "je ukupno akumulirano vrijeme vožnje tokom pet radnih dana; "
+          },
+          {
+            "text": "je ukupno akumulirano vrijeme vožnje tokom jedne sedmice. "
+          }
+        ],
+        "answer": [2],
+        "points": 2
+      },
+      {
+        "question": "Uređaj za davanje zvučnih signala ugrađen na motorna vozila koja spadaju u kategoriju/podkategoriju vozačke dozvole C i C1, mora proizvoditi zvukove jačine najmanje: ",
+        "answers": [
+          { "text": "80 dB(A); " },
+          { "text": "76 dB(A); " },
+          { "text": "64 dB(A); " }
+        ],
+        "answer": [1],
+        "points": 2
+      },
+      {
+        "question": "Noćno vrijeme označava razdoblje između: ",
+        "answers": [
+          { "text": "23:00 i 06:00; " },
+          { "text": "00:00 i 05:00. " }
+        ],
+        "answer": [1],
+        "points": 2
+      },
+      {
+        "question": "Vrste kartica za digitalne tahografe su: (više tačnih odgovora) ",
+        "answers": [
+          { "text": "kartica vozača; " },
+          { "text": "kartica prevoznika; " },
+          { "text": "kartica nadzornog organa; " },
+          { "text": "kartica radionice; " },
+          { "text": "kartica ispitivača. " }
+        ],
+        "answer": [1, 2, 3, 4],
+        "points": 2
+      },
+      {
+        "question": "Mobilni radnik je: ",
+        "answers": [
+          {
+            "text": "je lice koje upravlja vozilom ili koje se nalazi u vozilu kako bi prema potrebi bilo raspoloživo za upravljanje vozilom; "
+          },
+          {
+            "text": "je radnik koji čini dio prevoznog osoblja, uključujući i pripravnike i naučnike, koji rade za preduzeće koje obavlja komercijalne prevoze, odnosno prevoze za vlastite potrebe putnika ili roba u drumskom saobraćaju; "
+          },
+          {
+            "text": "je fizičko ili pravno lice koje obavlja djelatnost javnog drumskog prevoza ili prevoz za vlastite potrebe. "
+          }
+        ],
+        "answer": [2],
+        "points": 2
+      },
+      {
+        "question": "Ako se vozilom prevozi teret u kombinaciji koja se sastoji od vučnog vozila i jednoosovinske prikolice, pod dužinom vozila podrazumijeva se: ",
+        "answers": [
+          { "text": "dužina vučnog vozila; " },
+          { "text": "dužina jednoosovinske prikolice; " },
+          { "text": "ukupna dužina vučnog vozila i jednoosovinske prikolice. " }
+        ],
+        "answer": [3],
+        "points": 2
+      },
+      {
+        "question": "Koja je najveća dozvoljena brzina kretanja za teretna motorna vozila koja vuku dva priključna vozila? ",
+        "answers": [
+          { "text": "70 km/h; " },
+          { "text": "50 km/h; " },
+          { "text": "60 km/h. " }
+        ],
+        "answer": [2],
+        "points": 2
+      },
+      {
+        "question": "Pravo da upravlja motornim vozilom kategorije C i CE stiče lice koje navrši? ",
+        "answers": [
+          { "text": "18 godina; " },
+          { "text": "20 godina; " },
+          { "text": "21 godina. " }
+        ],
+        "answer": [3],
+        "points": 2
+      }
+    ]
+  },
+  {
+    "test": 22,
+    "questions": [
+      {
+        "question": "Javni prevoz u drumskom saobraćaju: ",
+        "answers": [
+          { "text": "može se vršiti samo motornim vozilima; " },
+          { "text": "može se vršiti motornim i zaprežnim vozilima. " }
+        ],
+        "answer": [1],
+        "points": 2
+      },
+      {
+        "question": "Vozač koji upravlja autobusom ili teretnim motornim vozilom ili skupom vozila  čija  je  najveća  dozvoljena  masa  veća  od  3.50kg  ne  smije neprekidno upravljati vozilom duže od 4,5 h, nakon čega mora da koristi odmor u trajanju od: ",
+        "answers": [
+          { "text": "30 min; " },
+          { "text": "45 min; " },
+          { "text": "1 h, " },
+          { "text": "2 h. " }
+        ],
+        "answer": [2],
+        "points": 2
+      },
+      {
+        "question": "Ukupno  dnevno  vrijeme  upravljanja  autobusom  u  međugradskom saobraćaju ne smije biti duže od: ",
+        "answers": [
+          { "text": "4,5 h; " },
+          { "text": "7 h; " },
+          { "text": "9 h. " }
+        ],
+        "answer": [3],
+        "points": 2
+      },
+      {
+        "question": "Kolika  je  najveća  dozvoljena  dužina  autobusa  sa  dvije  osovine uključujući i pripadajuće dijelove koji se mogu skinuti? ",
+        "answers": [{ "text": "13,50 m; " }, { "text": "15,00 m. " }],
+        "answer": [1],
+        "points": 2
+      },
+      {
+        "question": "Da li stop-svjetla mogu zasvijetliti u slučaju kada vozač koristi retarder?   ",
+        "answers": [{ "text": "ne mogu; " }, { "text": "mogu. " }],
+        "answer": [5],
+        "points": 2
+      },
+      {
+        "question": "U kojem slučaju autobus, osim autobusa za gradski saobraćaj, mora biti opremljen sa kočnim antiblokirajućim sistemom (ABS)? (više tačnih odgovora) ",
+        "answers": [
+          { "text": "ako mu najveća dozvoljena masa prelazi 12 t; " },
+          { "text": "ako je proizveden poslije 1. januara 1994. godine; " },
+          { "text": "ako mu najveća dozvoljena masa prelazi 9 t. " }
+        ],
+        "answer": [1, 2],
+        "points": 2
+      },
+      {
+        "question": "Koliko kandidata za vozača D kategorije može ispitati ispitivač tokom jednog dana? ",
+        "answers": [{ "text": "6 kandidata; " }, { "text": "8 kandidata. " }],
+        "answer": [1],
+        "points": 2
+      },
+      {
+        "question": "Kandidat  za  vozača  DE  kategorije  može  polagati  ispit  iz  upravljanja motornim vozilom ako priključno vozilo ima: (više tačnih odgovora) ",
+        "answers": [
+          { "text": "najveću dozvoljenu masu veću od 750 kg; " },
+          {
+            "text": "zatvoren tovarni prostor, najmanje 3 m širine i 3 m visine; "
+          },
+          {
+            "text": "zatvoren tovarni prostor, najmanje 2 m širine i 2 m visine. "
+          }
+        ],
+        "answer": [1, 3],
+        "points": 2
+      },
+      {
+        "question": "Koliko kutija prve pomoći mora imati autobus sa više od 25 sjedećih mjesta? ",
+        "answers": [
+          { "text": "jedna kutija; " },
+          { "text": "dvije kutije; " },
+          { "text": "tri kutije. " }
+        ],
+        "answer": [2],
+        "points": 2
+      },
+      {
+        "question": "Klinasti podmetači obavezni su za sva motorna i priključna vozila čija najveća dopuštena masa prelazi: ",
+        "answers": [{ "text": "5 t; " }, { "text": "7,5 t. " }],
+        "answer": [1],
+        "points": 2
+      },
+      {
+        "question": "Najveća dozvoljena dužina skupa vozila koji se sastoji od autobusa i prikolice iznosi: ",
+        "answers": [
+          { "text": "16,50 m; " },
+          { "text": "17,50 m; " },
+          { "text": "18,75 m; " },
+          { "text": "20,00 m. " }
+        ],
+        "answer": [3],
+        "points": 2
+      },
+      {
+        "question": "Da li za vrijeme upravljanja vozilom kategorija C i D vozač smije da ima alkohola u krvi? ",
+        "answers": [
+          { "text": "da, do 0,5 g/kg; " },
+          { "text": "ne; " },
+          { "text": "da, do 0,3 g/kg. " }
+        ],
+        "answer": [2],
+        "points": 2
+      },
+      {
+        "question": "Potvrda o aktivnostima vozača: ",
+        "answers": [
+          {
+            "text": "obrazac o evidenciji i razlozima ne korišćenja slobodnog vremena i odsustva vozača; "
+          },
+          {
+            "text": "potvrda koju izdaje prijevoznik vozaču za period dok vozač nije upravljao vozilom (bolovanje, godišnji odmor, ostali izostanci i dr.)."
+          }
+        ],
+        "answer": [2],
+        "points": 2
+      },
+      {
+        "question": "Tahograf je uređaj u vozilu koji bilježi: (više tačnih odgovora) ",
+        "answers": [
+          { "text": "silu kočenja vozila; " },
+          { "text": "brzinu, vrijeme i pređeni put vozila; " },
+          { "text": "vremena rada i odmora vozača. " }
+        ],
+        "answer": [2, 3],
+        "points": 2
+      },
+      {
+        "question": "Vozač koji upravlja autobusom mora, po pravilu, prije početka svog radnog dana imati neprekidan odmor od najmanje: ",
+        "answers": [
+          { "text": "10 h; " },
+          { "text": "8 h; " },
+          { "text": "11 h, " }
+        ],
+        "answer": [3],
+        "points": 2
+      },
+      {
+        "question": "Redovni dnevni odmor je: ",
+        "answers": [
+          { "text": "neprekinuti period odmora od najmanje 11 sati; " },
+          {
+            "text": "neprekidni period od najmanje tri sata i drugi neprekidni period od najmanje devet sati;"
+          },
+          {
+            "text": "neprekinuti period odmora od najmanje devet sati, ali manje od 11 sati. "
+          }
+        ],
+        "answer": [1],
+        "points": 2
+      },
+      {
+        "question": "Brzina kretanja za autobuse, kad se kreću autoputem ograničava se na: ",
+        "answers": [
+          { "text": "75 km/h; " },
+          { "text": "80 km/h; " },
+          { "text": "90 km/h; " },
+          { "text": "100 km/h. " }
+        ],
+        "answer": [4],
+        "points": 2
+      },
+      {
+        "question": "Kad se na javnom putu van naselja koji ima jednu saobraćajnu traku namijenjenu  za  saobraćaj  vozila  u  jednom  smijeru,  kreću  jedno  za drugim motorna vozila čija je najveća dozvoljena masa veća od 3.500 kg ili čija je dužina veća od sedam metara vozači su dužni da između svakog od tih vozila drže odstojanje od: ",
+        "answers": [
+          {
+            "text": "najmanje 100 m i to na dijelu puta gdje je dozvoljeno preticanje ; "
+          },
+          {
+            "text": "najmanje 500 m i to na dijelu puta gdje je dozvoljeno preticanje; "
+          },
+          {
+            "text": "najmanje 200 m, i to na dijelu puta gdje je dozvoljeno preticanje. "
+          }
+        ],
+        "answer": [1],
+        "points": 2
+      },
+      {
+        "question": "Digitalni tahograf je: ",
+        "answers": [
+          {
+            "text": "uređaj u drumskom saobraćaju za bilježenje brzine i pređenog puta, kao i vremena rada i odmora, gdje se podaci zapisuju na tahografski listić na kojem vrh pisača ostvaruje zapis mehaničkim pritiskom na tahografski listić, a koji omogućava bilježenje podataka za jedan dan; "
+          },
+          {
+            "text": "uređaj u drumskom saobraćaju za bilježenje brzine i pređenog puta, kao i vremena rada i  odmora,  gdje  se  podaci  zapisuju  u  radnu  memoriju  i  memorijsku  karticu,  a  koji omogućava pohranjivanje podataka za period od 365 dana. "
+          }
+        ],
+        "answer": [2],
+        "points": 2
+      },
+      {
+        "question": "Redovni sedmični odmor je: ",
+        "answers": [
+          { "text": "odmor koji neprekidno traje najmanje 45 sati; " },
+          { "text": "odmor koji neprekidno traje najmanje 48 sati. " }
+        ],
+        "answer": [1],
+        "points": 2
+      },
+      {
+        "question": "Kad vozač upravlja vozilom koje je opremljeno analognim tahografom, na zahtjev ovlašćenog lica mora pokazati: ",
+        "answers": [
+          { "text": "samo tahografski listić za tekući dan; " },
+          { "text": "tahografski listić za tekući dan i prethodnih 28 dana; " },
+          { "text": "tahografski listić za tekući dan i prethodnih 21 dan. " }
+        ],
+        "answer": [2],
+        "points": 2
+      },
+      {
+        "question": "U slučaju kad vozilo nije opremljeno tahografom, a isto se koristi za obavljanje  unutrašnjeg  linijskog  prevoza  putnika  na  linijama  ukupne udaljenosti do 50 km, vozač mora imati u vozilu: ",
+        "answers": [
+          { "text": "izvod iz rasporeda dužnosti i primjerak voznog reda; " },
+          { "text": "samo izvod iz rasporeda dužnosti. " }
+        ],
+        "answer": [1],
+        "points": 2
+      },
+      {
+        "question": "Ukupno akumulirano vrijeme vožnje tokom 14 dana uzastopno ne smije biti duže od: ",
+        "answers": [{ "text": "96 sati; " }, { "text": "90 sati. " }],
+        "answer": [2],
+        "points": 2
+      },
+      {
+        "question": "Uređaj za davanje zvučnih signala ugrađen na motorna vozila koja spadaju u kategoriju vozačke dozvole D1 i D, mora proizvoditi zvukove jačine najmanje:",
+        "answers": [{ "text": "90 dB(A); " }, { "text": "93 dB(A). " }],
+        "answer": [2],
+        "points": 2
+      },
+      {
+        "question": "Dvojna posada je: ",
+        "answers": [
+          { "text": "posada koju čine četiri vozača; " },
+          {
+            "text": "posada koju čine dva vozača (vozač koji upravlja vozilom i vozač u pripravnosti). "
+          }
+        ],
+        "answer": [2],
+        "points": 2
+      },
+      {
+        "question": "Sedmično vrijeme vožnje ne smije biti duže od? ",
+        "answers": [{ "text": "48 sati; " }, { "text": "56 sati0 " }],
+        "answer": [2],
+        "points": 2
+      },
+      {
+        "question": "Zimsku opremu za vozila čija najveća dozvoljena masa prelazi 3.500 kg i autobuse čine? (više tačnih odgovora) ",
+        "answers": [
+          { "text": "zimski pneumatici na pogonskim točkovima; " },
+          { "text": "lanci za snijeg; " },
+          { "text": "lopata; " },
+          { "text": "vreća pijeska od 25 do 50 kg. " }
+        ],
+        "answer": [1, 2],
+        "points": 2
+      },
+      {
+        "question": "Izdata vam je vozačka dozvola za D1 podkategoriju. Kojim motornim vozilima imate pravo upravljati? ",
+        "answers": [
+          {
+            "text": "motornim vozilima koja služe za prevoz lica i koja, osim sjedišta za vozača, imaju više od osam, a ne više od šesnaest sjedišta; "
+          },
+          {
+            "text": "motornim vozilima za prevoz tereta čija je najveća dozvoljena masa veća od 3.500 kg, a manja od 7.500 kg; "
+          },
+          {
+            "text": "motornim vozilima za prevoz tereta čija je najveća dozvoljena masa veća od 7.500 kg. "
+          }
+        ],
+        "answer": [1],
+        "points": 2
+      },
+      {
+        "question": "Najmanja dopuštena dubina kanala na gaznoj površini pneumatika za autobuse i teretna vozila je: ",
+        "answers": [
+          { "text": "1 mm; " },
+          { "text": "2 mm; " },
+          { "text": "1,6 mm. " }
+        ],
+        "answer": [2],
+        "points": 2
+      },
+      {
+        "question": "Koja je najveća dozvoljena količina alkohola u krvi za vozače motornih vozila kategorije C, CE, D i DE i vozače podkategorije C1, C1E i D1 i D1E za vrijeme upravljanja vozilom te kategorije i podkategorije? ",
+        "answers": [
+          { "text": "0,0 g/kg; " },
+          { "text": "0,3 g/kg; " },
+          { "text": "0,5 g/kg. " }
+        ],
+        "answer": [1],
+        "points": 2
+      },
+      {
+        "question": "Која је najveća dozvoljena količina alkohola u krvi za vozače vozila kojim se obavlja javni prevoz-za vrijeme obavljanja javnog prevoza tim vozilom? ",
+        "answers": [
+          { "text": "0,0 g/kg; " },
+          { "text": "0,3 g/kg; " },
+          { "text": "0,5 g/kg. " }
+        ],
+        "answer": [1],
+        "points": 2
+      },
+      {
+        "question": "Koja je najveća dozvoljena brzina kretanja na putevima za autobuse i autobuse s lakom prikolicom, kao i za teretna motorna vozila čija je najveća dozvoljena masa veća od 3.500 kg a manja od 7.500 kg? ",
+        "answers": [
+          { "text": "60 km/h; " },
+          { "text": "70 km/h; " },
+          { "text": "80 km/h. " }
+        ],
+        "answer": [3],
+        "points": 2
+      },
+      {
+        "question": "Sedmično vrijeme vožnje je: ",
+        "answers": [
+          {
+            "text": "je ukupno akumulirano vrijeme vožnje tokom pet radnih dana; "
+          },
+          {
+            "text": "je ukupno akumulirano vrijeme vožnje tokom jedne sedmice. "
+          }
+        ],
+        "answer": [2],
+        "points": 2
+      },
+      {
+        "question": "Kolika je najmanja namjenjena slobodna površina za jedno mjesto za stajanje, u autobusima, trolejbusima i priključnim vozilima kojima se prevoze putnici u stojećem stavu? ",
+        "answers": [
+          { "text": "0,15 m², a za gradske autobuse 0,125 m²; " },
+          { "text": "0,18 m² ; " },
+          { "text": "0,20 m² . " }
+        ],
+        "answer": [1],
+        "points": 2
+      },
+      {
+        "question": "Noćno vrijeme označava razdoblje između: ",
+        "answers": [
+          { "text": "23:00 i 06:00;" },
+          { "text": "00:00 i 05:00. " }
+        ],
+        "answer": [2],
+        "points": 2
+      },
+      {
+        "question": "Vrste kartica za digitalne tahografe su: (više tačnih odgovora) ",
+        "answers": [
+          { "text": "kartica vozača; " },
+          { "text": "kartica prevoznika; " },
+          { "text": "kartica nadzornog organa; " },
+          { "text": "kartica radionice; " },
+          { "text": "kartica ispitivača. " }
+        ],
+        "answer": [1, 2, 3, 4],
+        "points": 2
+      },
+      {
+        "question": "Mobilni radnik je: ",
+        "answers": [
+          {
+            "text": "je lice koje upravlja vozilom ili koje se nalazi u vozilu kako bi prema potrebi bilo raspoloživo za upravljanje vozilom; "
+          },
+          {
+            "text": "je radnik koji čini dio prevoznog osoblja, uključujući i pripravnike i naučnike, koji rade za preduzeće koje obavlja komercijalne prevoze, odnosno prevoze za vlastite potrebe putnika ili roba u drumskom saobraćaju; "
+          },
+          {
+            "text": "je fizičko ili pravno lice koje obavlja djelatnost javnog drumskog prevoza ili prevoz za vlastite potrebe. "
+          }
+        ],
+        "answer": [2],
+        "points": 2
+      },
+      {
+        "question": "Koja je najveća dozvoljena brzina kretanja za autobuse s priključnim vozilom za prevoz lica?",
+        "answers": [
+          { "text": "70 km/h; " },
+          { "text": "50 km/h; " },
+          { "text": "60 km/h. " }
+        ],
+        "answer": [2],
+        "points": 2
+      },
+      {
+        "question": "Koja je najveća dozvoljena brzina kretanja za trolejbuse? ",
+        "answers": [
+          { "text": "50 km/h; " },
+          { "text": "70 km/h; " },
+          { "text": "60 km/h. " }
+        ],
+        "answer": [1],
+        "points": 2
+      },
+      {
+        "question": "Koja je najveća dozvoljena brzina kretanja za gradske autobuse? ",
+        "answers": [
+          { "text": "70 km/h; " },
+          { "text": "60 km/h; " },
+          { "text": "50 km/h. " }
+        ],
+        "answer": [3],
+        "points": 2
+      },
+      {
+        "question": " Koja je najveća dozvoljena brzina kretanja za autobuse koji osim ugrađenih sjedišta imaju i određena mjesta za stajanje? ",
+        "answers": [
+          { "text": "70 km/h; " },
+          { "text": "60 km/h; " },
+          { "text": "50 km/h. " }
+        ],
+        "answer": [3],
+        "points": 2
+      },
+      {
+        "question": "Koja je najveća dozvoljena brzina kretanja za turistički voz? ",
+        "answers": [
+          { "text": "30 km/h; " },
+          { "text": "20 km/h; " },
+          { "text": "40 km/h. " }
+        ],
+        "answer": [2],
+        "points": 2
+      },
+      {
+        "question": "Pravo da upravlja motornim vozilom kategorije D i DE stiče lice koje navrši: ",
+        "answers": [{ "text": "21 godinu; " }, { "text": "24 godinu. " }],
+        "answer": [1],
+        "points": 2
+      }
+    ]
   }
 ]
