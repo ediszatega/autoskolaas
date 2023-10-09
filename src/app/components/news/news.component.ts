@@ -12,7 +12,7 @@ import { NewsService } from 'src/app/shared/services/news.service';
 export class NewsComponent implements OnInit {
   newsList: News[] = [];
   currentPage = 1;
-  itemsPerPage = 4;
+  itemsPerPage = 3;
 
   constructor(
     private newsService: NewsService,

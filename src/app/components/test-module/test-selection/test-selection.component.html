@@ -1,16 +1,33 @@
-<div class="test-selection">
-  <div class="label-wrapper">
-    <h1>KATEGORIJA B</h1>
-  </div>
-  <div class="label-wrapper">
-    <label for="test">Odaberite test:</label>
-  </div>
-  <div class="dropdown-wrapper">
-    <select id="test" [(ngModel)]="selectedTest">
-      <option *ngFor="let test of tests" [value]="test">{{ test }}</option>
-    </select>
-  </div>
-  <div class="button-wrapper">
-    <button (click)="onContinue()">Dalje</button>
+<div class="page-wrapper">
+  <app-page-title title_text="Testovi"></app-page-title>
+  <div class="container">
+    <div class="label-wrapper">
+      <label for="test">Odaberite kategoriju:</label>
+    </div>
+    <div class="dropdown-wrapper">
+      <select id="category" [(ngModel)]="selectedCategory">
+        <option *ngFor="let category of categories" [value]="category">
+          {{ category }}
+        </option>
+      </select>
+    </div>
+
+    <div class="label-wrapper">
+      <label for="test">Odaberite test:</label>
+    </div>
+    <div class="dropdown-wrapper">
+      <select id="test" [(ngModel)]="selectedTest">
+        <option
+          *ngFor="let test of categoryToTests[selectedCategory]"
+          [value]="test"
+        >
+          {{ test }}
+        </option>
+      </select>
+    </div>
+
+    <div class="button-wrapper">
+      <button (click)="onContinue()">Dalje</button>
+    </div>
   </div>
 </div>
