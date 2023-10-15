@@ -47,15 +47,6 @@
         >Šifra</a
       >
     </li>
-    <li *ngIf="authService.isLoggedIn">
-      <a
-        [routerLink]="['/sign-up']"
-        href="#"
-        routerLinkActive="active"
-        (click)="navLinkClicked()"
-        >Korisnik</a
-      >
-    </li>
     <li>
       <a
         [routerLink]="['/galerija']"
@@ -70,6 +61,26 @@
         routerLinkActive="active"
         (click)="navLinkClicked()"
         >Kontakt</a
+      >
+    </li>
+    <li>
+      <a
+        *ngIf="!authService.isLoggedIn"
+        href="#"
+        [routerLink]="['/login']"
+        routerLinkActive="active"
+        class="user account"
+        >Prijavi se</a
+      >
+    </li>
+    <li>
+      <a
+        *ngIf="authService.isLoggedIn"
+        href="#"
+        routerLinkActive="active"
+        class="account"
+        (click)="authService.SignOut()"
+        >Odjavi se</a
       >
     </li>
   </ul>

@@ -42,7 +42,6 @@ const routes: Routes = [
     canActivate: [TestGuard],
   },
   { path: 'login', component: LoginComponent },
-  { path: 'sign-up', component: SignUpComponent, canActivate: [AuthGuard] },
   {
     path: 'forgot-password',
     component: ForgotPasswordComponent,
