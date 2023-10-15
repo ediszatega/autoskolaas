@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { AngularFireDatabase } from '@angular/fire/compat/database';
 import { News } from '../news';
-import { Observable, map, of, switchMap } from 'rxjs';
+import { Observable, filter, map, of, switchMap } from 'rxjs';
 import { AngularFireStorage } from '@angular/fire/compat/storage';
 
 @Injectable({ providedIn: 'root' })
@@ -20,7 +20,12 @@ export class NewsService {
           snapshot.map((action) => {
             const key = action.payload.key; // Get the key from snapshot
             const data = action.payload.val() as News;
-            return { key, ...data, date: new Date(data.date) } as News;
+            return {
+              key,
+              ...data,
+              date: new Date(data.date),
+              content: data.content.replace(/<br>/g, '\n'),
+            } as News;
           })
         )
       );
@@ -50,6 +55,7 @@ export class NewsService {
       .valueChanges()
       .pipe(
         switchMap((news) => {
+          news.images = news.images.filter((image) => image.filepath != '');
           if (!news.images || news.images.length === 0) {
             return of(null);
           }

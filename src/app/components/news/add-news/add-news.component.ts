@@ -53,9 +53,15 @@ export class AddNewsComponent {
     if (this.newsForm.valid) {
       const user: User = JSON.parse(localStorage.getItem('user')!);
       const currentDate = new Date();
+      if (this.images.length == 0) {
+        this.images.push({
+          filepath: '',
+          url: '../../../../assets/default_news.jpg',
+        });
+      }
       const newsData = {
         title: this.newsForm.value.title,
-        content: this.newsForm.value.content,
+        content: this.newsForm.value.content.replace(/\n/g, '<br>'),
         date: currentDate.toISOString(),
         author: user.displayName,
         images: this.images,
