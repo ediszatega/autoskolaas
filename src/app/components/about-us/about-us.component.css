@@ -25,13 +25,19 @@
   max-width: 1200px;
   height: 100%;
 }
+
+p {
+  text-align: justify;
+}
 .text1 {
   justify-self: start;
   order: 1;
+  text-align: justify;
 }
 
 .txt-important {
   font-weight: bold;
+  text-align: justify;
 }
 .image1 {
   justify-self: end;
@@ -41,6 +47,7 @@
   justify-self: end;
   order: 4;
   text-align: right;
+  text-align: justify;
 }
 .image2 {
   justify-self: start;

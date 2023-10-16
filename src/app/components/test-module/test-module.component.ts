@@ -53,6 +53,7 @@ export class TestModuleComponent implements OnInit {
     current_test.questions.forEach((question: any) => {
       question.answers.forEach((answer: any) => {
         answer.class = '';
+        answer.checked = false;
       });
     });
   }

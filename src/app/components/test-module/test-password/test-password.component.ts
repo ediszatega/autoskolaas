@@ -26,5 +26,6 @@ export class TestPasswordComponent {
   changePassword() {
     this.currentPassword.password = this.newPassword;
     this.crudService.UpdatePassword(this.currentPassword);
+    this.newPassword = '';
   }
 }

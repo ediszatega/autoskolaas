@@ -132,6 +132,12 @@ h3 {
   color: white;
 }
 
+.question-nav-buttons-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 .question-nav-button {
   padding: 0.3rem 1rem;
   margin-right: 0.3rem;
@@ -173,4 +179,14 @@ h3 {
 
 .correct {
   background-color: #60c979;
+}
+
+@media (max-width: 500px) {
+  .question-nav-buttons-container {
+    flex-direction: row;
+  }
+
+  .finish-button {
+    width: 100%;
+  }
 }

@@ -57,7 +57,7 @@ export class EditNewsComponent {
       this.news = news;
       this.newsForm.setValue({
         title: this.news.title,
-        content: this.news.content,
+        content: this.news.content.replace(/<br>/g, '\n'),
       });
       this.images = this.news.images;
     });
@@ -86,7 +86,7 @@ export class EditNewsComponent {
       const newsData = {
         key: this.news.key,
         title: this.newsForm.value.title,
-        content: this.newsForm.value.content,
+        content: this.newsForm.value.content.replace(/\n/g, '<br>'),
         date: this.news.date,
         author: this.news.author,
         images: this.images,

@@ -33,6 +33,7 @@ import { AddNewsComponent } from './components/news/add-news/add-news.component'
 import { NewsDetailsComponent } from './components/news/news-details/news-details.component';
 import { EditNewsComponent } from './components/news/edit-news/edit-news.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { ForgotPasswordComponent } from './login/forgot-password/forgot-password.component';
 
 @NgModule({
   declarations: [
@@ -55,6 +56,7 @@ import { ContactComponent } from './components/contact/contact.component';
     NewsDetailsComponent,
     EditNewsComponent,
     ContactComponent,
+    ForgotPasswordComponent,
   ],
   imports: [
     BrowserModule,

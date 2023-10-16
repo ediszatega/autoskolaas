@@ -37,7 +37,11 @@ export class NewsService {
       .valueChanges()
       .pipe(
         map((news) => {
-          return { key: id, ...news, date: new Date(news.date) };
+          return {
+            key: id,
+            ...news,
+            date: new Date(news.date),
+          };
         })
       );
   }

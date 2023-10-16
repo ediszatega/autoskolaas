@@ -69,11 +69,6 @@ header {
   transition: all 0.5s ease;
 }
 
-.user {
-  display: flex;
-  align-items: center;
-}
-
 .main a:hover,
 .main a.active {
   color: var(--text-dark);
@@ -141,7 +136,4 @@ header {
 }
 
 @media (max-width: 580px) {
-  .account {
-    display: none;
-  }
 }

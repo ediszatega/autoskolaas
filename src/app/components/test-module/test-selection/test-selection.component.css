@@ -74,4 +74,8 @@ button:hover {
   .page-wrapper {
     margin-bottom: 6rem;
   }
+
+  button {
+    padding: 10px 30px;
+  }
 }
